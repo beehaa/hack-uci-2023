@@ -359,24 +359,80 @@
             </div>
         </div>
     </div>
+
+    <!-- <section class="ui container" id="tryitdesc">
+        <h2>hee</h2>
+        <div class="ui segment">
+            <h3>Monthly 50/30/20 Budget Calculator</h3>
+            <p>Enter your monthly after-tax income into this free budget calculator to create a suggested budget.</p>
+        </div>
+    </section> -->
+
+    <section class="ui container" id="calculator">
+        
+        <div class="ui segment">
+            <h2>Monthly 50/30/20 Budget Calculator</h2>
+            <p>Whether you use an app or a budget worksheet to get a handle on your spending, you'll want to know where your money is going — and then make a plan for where you want it to go.
+            </p>
+            <p>The 50/30/20 budget is a good tool to do just that.</p>
+            <p>Use the calculator to estimate how you might divide your monthly income into needs, wants and savings. This will give you a big-picture view of your finances. The most important number is the smallest: the 20% dedicated to savings. Once you achieve that, perhaps with an employer-sponsored retirement plan and other automated monthly savings transfers, the rest — that big 80% chunk — is up for debate.</p>
+            <p>That leaves 50% for needs and 30% for wants, but these are parameters you can tweak to suit your reality. For example, if you live in an expensive housing market, your monthly mortgage or rent payment might spill a bit into your "wants" budget. Budgets are meant to bend but not be broken.</p>
+            <p>
+        </div>
+        <div class="ui segment">
+            <div class="ui three column stackable center aligned grid">
+              <div class="middle aligned row">
+                <div class="column">
+                    <div class="ui icon small header">
+                      <i class="home blue icon"></i>
+                      50%: needs
+                    </div>
+                    <div class="field">
+                      <p>Necessities are the expenses you can’t avoid. This portion of your budget should cover required costs such as: <i>housing, food, transportation, utilities, etc.</i></p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui icon small header">
+                      <i class="shop blue icon"></i>
+                      30%: wants
+                    </div>
+                    <div class="field">
+                      <p>Generally, wants are the extras that aren’t essential to living and working such as <i>monthly subscriptions, travel, entertainment, and meals out</i>. </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="ui icon small header">
+                      <i class="money blue icon"></i>
+                      20%: savings and debt
+                    </div>
+                    <div class="field">
+                      <p>Savings is the amount you sock away to prepare for the future. Devote this chunk of your budget to paying down existing debt and creating a financial cushion.
+                      </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
     <section class="ui container" id="tryitouter">
-        <h3>Monthly 50/30/20 Budget Calculator</h3>
         <div class="ui container" id="tryit">
-            
-            <form class="ui form">
+            <h3>Monthly 50/30/20 Budget Calculator</h3>
+            <p>This 50/30/20 calculator divides your take-home income into suggested spending in three categories: 50% of net pay for needs, 30% for wants and 20% for savings and debt repayment.</p>
+            <div class="ui divider"></div>
+            <form class="ui form" onsubmit="return false;">
                 <div class="field">
                   <label>Monthly after-tax income</label>
-                  <input type="number" name="income" class="income" placeholder="$0">
+                  <input type="number" name="income" onclick="" class="income" placeholder="$0" style="width:50%;">
                 </div>
-                <p>Your 50/30/20 numbers:</p>
-                <p>NECESSITIES</p>
-                <p id="necessities_amount">$0</p>
-                <p>WANTS</p>
-                <p id="wants_amount">$0</p>
-                <p>SAVINGS AND DEBT REPAYMENT</p>
-                <p id="savings_amount">$0</p>
-                <!-- <button class="ui primary button" type="submit">Calculate</button> -->
-              </form>
+                <p style="text-decoration:underline;">Your 50/30/20 numbers:</p>
+                <p class="category">Necessities</p>
+                <p class="cat_amount" id="necessities_amount">$0</p>
+                <p class="category">Wants</p>
+                <p class="cat_amount" id="wants_amount">$0</p>
+                <p class="category">Savings And Debt Repayment</p>
+                <p class="cat_amount" id="savings_amount">$0</p>
+            </form>
         </div>
     </section>
     <section class="ui container" id="resources">

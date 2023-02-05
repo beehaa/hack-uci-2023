@@ -66,20 +66,42 @@ margin: 0 10px; /* Add some space between the buttons */
     text-align: center;
     margin-top: 10px;
     padding: 1rem;
+    width: 65%;
 }
+
 #tryit{
     /* display: flex; */
     /* justify-content: center; */
     margin-top: 10px;
     padding: 1rem;
-    width: 50%;
+    width: 80%;
     border: 1px solid rgba(34,36,38,.15);
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgb(100 102 106 / 10%), 0 8px 16px 0 rgb(100 102 106 / 23%);
 }
 
-#resources {
+form{
+    padding: 20px;
+}
+
+.category {
+    font-weight: bold;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+}
+
+.cat_amount{
+    color: #1C7EC8;
+    font-size: large;
+}
+
+#resources, #calculator{
     margin-top: 10px;
     padding: 1rem;
+}
+
+.form {
+    text-align: left;
 }
 
 footer{
