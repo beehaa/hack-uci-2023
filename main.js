@@ -63,3 +63,9 @@ function moveSteps() {
     $("#yes-content-" + buttonId).hide();
   });
   
+  $('.income').on('change', function() {
+    console.log(this.value);
+    $('#necessities_amount').html("$"+Math.round(this.value/2));
+    $('#wants_amount').html("$"+Math.round(this.value/3));
+    $('#savings_amount').html("$"+Math.round(this.value/5));
+  });
