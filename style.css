@@ -1,0 +1,65 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em 1em;
+}
+
+.button .get-started-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ui.attached.buttons .button {
+    margin: 0px 5px;
+}
+
+.ui.attached.segment {
+    /* padding: 1em; */
+    border: none;
+}
+
+.ui.steps .step {
+    flex-wrap: nowrap;
+}
+
+.ui.segment {
+    position:relative;
+    box-shadow: 0 0px 0px 0 rgb(34 36 38 / 15%);
+    margin: none;
+    padding: none;
+    border-radius: 0;
+    border: 0px solid rgba(34,36,38,.15);
+}
+.ui.attached.segment {
+  padding: 1em;
+}
+.button-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px 20px; 
+}
+
+.ui.buttons {
+display: flex;
+justify-content: center;
+margin: 0px 10px; 
+}
+
+.ui.button {
+margin: 0 10px; /* Add some space between the buttons */
+}
+
+#resources {
+    margin-top: 10px;
+    padding: 1rem;
+}
+
+footer{
+    padding: 1rem;
+    color: gray;
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack at UCI - Spending Flowchart</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- JQuery dependency -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- ADD SEMANTIC UI LIBRARY SOURCE CODE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+        integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+        integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+
+<body>
+    <header> 
+        <div class="ui container">
+            <div class="top banner">
+                <h1>Personal FinANTs Spending Flowchart - United States</h1>
+                <h4>A tool to help you stay on top of your finances.</h4>
+                <img src="assets/anteater-piggy-bank.png" alt="anteater-piggy-bank" width="150" height="150">
+            </div>
+            <!-- <button id="get-started-button" class="ui primary large button">Get Started</button> -->
+        </div>
+    </header>
+    
+    <div class="ui container" id="main-app">
+        <div class="button-container">
+            <!-- <div class="ui buttons"> -->
+                <button id="back-button" class="ui primary large button">Back</button>
+                <button id="reset-button" class="ui small button">Reset</button>
+                <button id="next-button" class="ui primary large button">Next</button>
+            <!-- </div> -->
+        </div>
+        <div class="ui grid">
+            <div class="six wide column">
+                <div class="ui vertical medium steps">
+                    <div class="active step" id="step0">
+                        <i class="check icon"></i>
+                        <div class="content">
+                        <div class="title">Step 0</div>
+                        <div class="description">Budget and reduce expenses, set realistic goals</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step1">
+                        <i class="wait icon"></i>
+                        <div class="content">
+                        <div class="title">Step 1</div>
+                        <div class="description">Build on emergency fund</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step2">
+                        <i class="wait icon"></i>
+                        <div class="content">
+                        <div class="title">Step 2</div>
+                        <div class="description">Employer-sponsored matching funds</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step3">
+                        <i class="wait icon"></i>
+                        <div class="content">
+                            <div class="title">Step 3</div>
+                            <div class="description">Pay down high/moderate interest debts</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step4">
+                        <i class="wait icon"></i>
+                        <div class="content">
+                            <div class="title">Step 4</div>
+                            <div class="description">Contribute to an IRA</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step5">
+                        <i class="wait icon"></i>
+                        <div class="content">
+                            <div class="title">Step 5</div>
+                            <div class="description">Save more for retirement</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step6">
+                        <i class="wait icon"></i>
+                        <div class="content">
+                            <div class="title">Step 6</div>
+                            <div class="description">Save for other goals & advanced methods</div>
+                        </div>
+                    </div>
+                    <div class="disabled step" id="step7">
+                        <i class="check circle outline icon"></i>
+                        <div class="content">
+                            <div class="title">Done</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ten wide column">
+                <div class="ui segment" id="step0Box">
+                    
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>Create a Budget
+                        </div>
+                        <div class="content active">
+                            <p>Fundamental to a sound financial footing is knowing where your money is going. Budgeting helps you see your sources of income less your expenses. You should minimize your expenses to the extent practical. Housing costs, utilities, and basic sustenance are harder to eliminate than "entertainment," eating out, or clothing expenses.</p>
+
+                            <p>Free online tools (like Mint.com and Personal Capital) or spreadsheets like those found in the Wiki's Tools page can help you track your expenses.</p>
+
+                            <p>Once your budget is figured out, you need to figure out what your goals are. Secure retirement? Buy a house? Save for a car? We'll get to specifics on how to save for these a little later on.</p>
+
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>Pay Rent/Mortgage
+                        </div>
+                        <div class="content">
+                            <p>(Including renters or homeowners insurance, if required)</p>
+                        </div>
+                        <div class="title"><i class="dropdown icon"></i>Pay Essential Items</div>
+                        <div class="content">
+                            <p>(Power, water, heat, toiletries, etc.)</p>
+                        </div>
+                        <div class="title"><i class="dropdown icon"></i>Pay Income Earning Expenses</div>
+                        <div class="content">
+                            <p>(Necessary transportation expenses, possibly Internet/phone, anything required to continue earning income)</p>
+                        </div>
+                        <div class="title"><i class="dropdown icon"></i>Pay Health Care</div>
+                        <div class="content">
+                            <p>(Health insurance and health care expenses)</p>
+                        </div>
+                        <div class="title"><i class="dropdown icon"></i>Make Minimum Payments On All Debts & Loans</div>
+                        <div class="content">
+                            <p>(Student loans, credit cards, etc.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step1Box" style="display: none;">
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>Build Small Emergency Fund
+                        </div>
+                        <div class="content active">
+                            <p>An emergency fund should be a relatively liquid sum of money that you don't touch unless something unexpected comes up. Unexpected travel, essential appliance replacement, and sudden medical procedures are all user-submitted examples of emergency funds in action. If you need to draw from your emergency fund at any time, your first priority as soon as you get back on your feet should be to replenish it. Treat your emergency fund right and it will return the favor.</p>
+
+                            <p><b>How should I size my emergency fund?</b> For most people, 3 to 6 months of expenses is good. A larger emergency fund (e.g., 9 to 12 months) may be warranted if your income is variable or uncertain.</p>
+
+                            <p>tldr; (Either $1,000 or one months' worth of expenses, whichever is greater; use a savings or checking account.)</p>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>Pay Any Non-Essential Bills in Full
+                        </div>
+                        <div class="content">
+                            <p>(Cable, Internet, phone, etc.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step2Box" style="display: none;">
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>Does your employer offer a retirement account with an employer match?
+                        </div>
+                        <div class="content active">
+                            <div class="ui attached segment">
+                                <div class="ui two top attached buttons">
+                                  <button class="ui button yes-button" id="yes-button-1">Yes</button>
+                                  <button class="ui button no-button" id="no-button-1">No</button>
+                                </div>
+                                <div class="ui attached segment" id="yes-content-1" style="display: none;">
+                                    <p>Contribute the amount needed to get the full employer match, but nothing above that amount.</p>
+                                </div>
+                                <div class="ui attached segment" id="no-content-1" style="display: none;">
+                                    <p>Move on the next step and consider asking your employer to match contributions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step3Box" style="display: none;">
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>High Interest Debt
+                        </div>
+                        <div class="content active">
+                            <div class="ui attached segment">
+                                <h4>Do you have any high interest debt? (i.e., debt with an interest rate of 10% or higher)</h4>
+                                <div class="ui two top attached buttons">
+                                  <button class="ui button yes-button" id="yes-button-2">Yes</button>
+                                  <button class="ui button no-button" id="no-button-2">No</button>
+                                </div>
+                                <div class="ui attached segment" id="yes-content-2" style="display: none;">
+                                    <p>Evaluate the merits of the "Avalanche" and "Snowball" methods and their advantages in your personal finance financial/pyschological situation and apply accordingly to pay off these debts.</p>
+
+                                    <p>There are two main methods of paying down debt:</p>
+                                    <ul>
+                                        <li><p>With the <strong>avalanche</strong> method, debts are paid down in order of interest rate, starting with the debt that carries the highest interest rate.  This is the financially optimal method of paying down debt, and you will pay less money overall compared to the snowball method.</p></li>
+                                        <li><p>With the <strong>snowball</strong> method, popularized by Dave Ramsey, debts are paid down in order of balance size, starting with the smallest.  Paying off small debts first may give you a psychological boost and improve one's cash flow situation, as paid off debts free up minimum payments.  The downside is that larger loans (that may be at higher interest rates) are left untouched for longer, costing more in the long run.</p></li>
+                                        </ul>
+
+                                    
+                                </div>
+                                <div class="ui attached segment" id="no-content-2" style="display: none;">
+                                    <p>Increase Emergency Fund to 3-6 Months Living Expenses (Use a savings or checking account).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>Moderate Interest Debt
+                        </div>
+                        <div class="content">
+                            <div class="ui attached segment">
+                                <h4>Do you have any moderate interest debt? (i.e., remaining debt over 4-5% interest rate, excluding mortgage)</h4>
+                                <div class="ui two top attached buttons">
+                                  <button class="ui button yes-button" id="yes-button-3">Yes</button>
+                                  <button class="ui button no-button" id="no-button-3">No</button>
+                                </div>
+                                <div class="ui attached segment" id="yes-content-3" style="display: none;">
+                                    <p>Evaluate the merits of the "Avalanche" and "Snowball" methods and their advantages in your personal finance financial/pyschological situation and apply accordingly to pay off these debts.</p>
+
+                                    <p>There are two main methods of paying down debt:</p>
+                                    <ul>
+                                        <li><p>With the <strong>avalanche</strong> method, debts are paid down in order of interest rate, starting with the debt that carries the highest interest rate.  This is the financially optimal method of paying down debt, and you will pay less money overall compared to the snowball method.</p></li>
+                                        <li><p>With the <strong>snowball</strong> method, popularized by Dave Ramsey, debts are paid down in order of balance size, starting with the smallest.  Paying off small debts first may give you a psychological boost and improve one's cash flow situation, as paid off debts free up minimum payments.  The downside is that larger loans (that may be at higher interest rates) are left untouched for longer, costing more in the long run.</p></li>
+                                        </ul>
+                                </div>
+                                <div class="ui attached segment" id="no-content-3" style="display: none;">
+                                    <p>Move on to the next step.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step4Box" style="display: none;">
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>Roth vs Traditional IRA
+                        </div>
+                        <div class="content active">
+                            <p>Evaluate the merits of a Roth vs Traditional IRA in the context of your personal financial situation and max the yearly contributions accordingly.</p>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>Large Purchases or Investments
+                          </div>
+                          <div class="content">
+                            <div class="ui attached segment">
+                                <h4>Are you expecting any large, <i>required</i> purchases or personal investments in the near future?
+                                    (College, professional certifications, a car so you can get to work, etc.)</h4>
+                                <div class="ui two top attached buttons">
+                                  <button class="ui button yes-button" id="yes-button-4">Yes</button>
+                                  <button class="ui button no-button" id="no-button-4">No</button>
+                                </div>
+                                <div class="ui attached segment" id="yes-content-4" style="display: none;">
+                                    <p>Save the amount needed for these expenses in a savings or checking account.</p>
+                                </div>
+                                <div class="ui attached segment" id="no-content-4" style="display: none;">
+                                    <p>Move on to the next step.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step5Box" style="display: none;">
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>Are you currently saving <i>at least</i> 15% of your pre-tax income for retirement?
+                        </div>
+                        <div class="content active">
+                            <div class="ui attached segment">
+                                <div class="ui two top attached buttons">
+                                  <button class="ui button yes-button" id="yes-button-5">Yes</button>
+                                  <button class="ui button no-button" id="no-button-5">No</button>
+                                </div>
+                                <div class="ui attached segment" id="yes-content-5" style="display: none;">
+                                    <p>Move on to HSA Investing in the next step.</p> 
+                                </div>
+                                <div class="ui attached segment" id="no-content-5" style="display: none;">
+                                    <div class="ui attached segment">
+                                        <h4>Does your employer offer a 401(k), 403(b), or similar retirement plan into which you could save more money?</h4>
+                                        <div class="ui two top attached buttons">
+                                          <button class="ui button yes-button" id="yes-button-6">Yes</button>
+                                          <button class="ui button no-button" id="no-button-6">No</button>
+                                        </div>
+                                        <div class="ui attached segment" id="yes-content-6" style="display: none;">
+                                            <p>Increase contributions until you have reached 15% pre-tax income being saved for retirement.</p> 
+                                        </div>
+                                        <div class="ui attached segment" id="no-content-6" style="display: none;">
+                                            <p>If self-employed, contribute to an Individual 401(k), SEP-IRA, or SIMPLE IRA to reach 15% pre-tax income saved; if not self employed, contribute to a taxable account to reach this goal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step6Box" style="display: none;">
+                    <div class="ui styled accordion">
+                        <div class="title active">
+                          <i class="dropdown icon"></i>Do you have a qualified high-deductible health plan and are thus eligible for an investable HSA?
+                        </div>
+                        <div class="content active">
+                            <div class="ui attached segment">
+                                <div class="ui two top attached buttons">
+                                  <button class="ui button yes-button" id="yes-button-7">Yes</button>
+                                  <button class="ui button no-button" id="no-button-7">No</button>
+                                </div>
+                                <div class="ui attached segment" id="yes-content-7" style="display: none;">
+                                    <p>Max yearly HSA contributions.</p> 
+                                </div>
+                                <div class="ui attached segment" id="no-content-7" style="display: none;">
+                                    <div class="ui attached segment">
+                                        <h4>Do you have children and wish to help pay for some or all of their college expenses?</h4>
+                                        <div class="ui two top attached buttons">
+                                          <button class="ui button yes-button" id="yes-button-8">Yes</button>
+                                          <button class="ui button no-button" id="no-button-8">No</button>
+                                        </div>
+                                        <div class="ui attached segment" id="yes-content-8" style="display: none;">
+                                            <p>Evaluate available savings/investment options, such as a 529 plan, and contribute accordingly.</p> 
+                                        </div>
+                                        <div class="ui attached segment" id="no-content-8" style="display: none;">
+                                            <p>At this point, you have some options on how to proceed, and it is completely up to you and your personal goals and desires.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>Would you like to retire early?
+                        </div>
+                        <div class="content">
+                            <p>Max out 401(k), 403(b), or other employer sponsored account, consider the "mega backdoor Roth IRA", then use a taxable account.</p>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>Do you have more immediate goals?
+                        </div>
+                        <div class="content">
+                            <p>Use savings for goals sooner than 3-5 years, a conservative mix of stocks and bonds for goals more than 3-5 years away.
+                                (Common examples include down payments for homes, saving for vehicles, paying down a mortgage, and vacation funds.)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment" id="step7Box" style="display: none;">
+                    <h3>Congratulations! You have reached the end of the flowchart!</h3>
+                    <img src="assets/roadmap.png" alt="roadmap" width="400" height="300">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="ui container" id="resources">
+        <h2>Additional Resources</h2>
+        <div class="ui list">
+            <div class="item">
+              <i class="linkify icon"></i>
+              <div class="content">
+                <a href="https://merage.uci.edu/ciwm-events/personal-finants.html" class="header">Personal FinANTS</a>
+                <div class="description">Center for Investment and Wealth Management, CIWM, provides students with a free canvas course to learn more about financial knowledge.</div>
+              </div>
+            </div>
+            <div class="item">
+              <i class="linkify icon"></i>
+              <div class="content">
+                <a href="https://merage.uci.edu/ciwm-events/LIFEvest.html" class="header">Pacific Life LIFEvest Program</a>
+                <div class="description">The Pacific Life LIFEvest program seeks to provide a strong foundation regarding various financial literacy topics and numerous life skills through a free, week-long stay at University of California, Irvine.</div>
+              </div>
+            </div>
+
+            <div class="item">
+              <i class="linkify icon"></i>
+              <div class="content">
+                <a href="https://www.reddit.com/r/personalfinance/wiki/index" class="header">Personal Finance Wiki on Reddit</a>
+                <div class="description">Learn about budgeting, saving, getting out of debt, credit, investing, and retirement planning. Join our community, read the PF Wiki, and get on top of your finances!</div>
+              </div>
+            </div>
+            <div class="item">
+                <i class="youtube icon"></i>
+                <div class="content">
+                  <a href="https://www.youtube.com/@GrahamStephan" class="header">Graham Stephan's YouTube Channel</a>
+                  <div class="description">A real estate agent and investor who creates personal finance content.</div>
+                </div>
+              </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="ui divider"></div>
+        <div class="ui container">
+            <p><i class="info circle icon"></i><b>A note on Entertainment Expenses:</b>
+                Entertainment expenses are certainly discretionary, however, if you are dedicated to achieving financial health and getting rid of debt, it is best to keep discretionary spending at an absolute minimum until your high interest debt is paid off. Informed decision making (paired with common sense) can be a great tool to employ while forming a healthy financial strategy; use it!</p>
+            <p><i class="info circle icon"></i> <b> Disclaimer: </b>This chart is a supplemental guide, there are circumstances where you may need to alter your approach (such as earning income that exceeds the Roth IRA limit, thus creating need to pursue Backdoor Roth contributions). To make optimal financial decisions for your unique situation (Snowball vs. Avalanche, Roth vs. Traditional, etc.), it is vital to spend the time cultivating the necessary knowledge to enable you to move forward from an informed place of strength.</p>
+            <Information>Created by /u/atlasvoid, 2016; based off flowchart created by /u/beached89. Information from: <a href="https://www.reddit.com/r/personalfinance/wiki/commontopics/">Personal Finance Subreddit</a>.</p>
+            <p><a href="https://www.linkedin.com/in/brian-ha/"><i class="linkedin icon"></i></a>Brian Ha</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Include jQuery and Semantic UI JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>
