@@ -22,6 +22,17 @@ header{
     border: none;
 }
 
+#step0Box.ui.segment,
+#step1Box.ui.segment,
+#step2Box.ui.segment,
+#step3Box.ui.segment,
+#step4Box.ui.segment,
+#step5Box.ui.segment,
+#step6Box.ui.segment,
+#step7Box.ui.segment {
+    padding: 0;
+}
+
 .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
     color: rgb(0 0 0 / 55%);
     background-color: #0034680a;
@@ -56,8 +67,14 @@ margin: 0px 10px;
 }
 
 .ui.button {
-margin: 0 10px; /* Add some space between the buttons */
+    margin: 0 10px; /* Add some space between the buttons */
 }
+
+#age_groups{
+    margin-top: 20px;
+    padding: 1rem;
+}
+
 
 #tryitouter{
     display: block;
