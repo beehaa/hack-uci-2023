@@ -68,3 +68,37 @@ function moveSteps() {
     $('#wants_amount').html("$"+Math.round(this.value/3));
     $('#savings_amount').html("$"+Math.round(this.value/5));
   });
+
+// age groups
+$(document).ready(function() {
+  $("#age_menu a").click(function() {
+    $("#age_groups_content .content").hide();
+    var index = $(this).index();
+    // alert(index);
+    $("#age_groups_content .ui.segment.content").eq(index).show();
+  });
+});
+
+
+let ageMenu = document.querySelector("#age_menu");
+
+ageMenu.addEventListener("click", function(event) {
+  let clickedButton = event.target;
+
+  if (clickedButton.tagName === "A") {
+    let currentActiveButton = ageMenu.querySelector(".active");
+
+    if (currentActiveButton) {
+      currentActiveButton.classList.remove("active");
+    }
+
+    clickedButton.classList.add("active");
+  }
+});
+// $(document).ready(function(){
+//   $("#age_menu .item").click(function(){
+//     // $("#age_groups_content .content").hide();
+//     var index = $("#age_menu .item").index(this);
+//     $("#age_groups_content .content").eq(index).show();
+//   });
+// });

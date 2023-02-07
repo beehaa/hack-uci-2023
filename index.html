@@ -32,22 +32,21 @@
     <header> 
         <div class="ui container">
             <div class="top banner">
-                <h1>Personal FinANTs Spending Flowchart - United States</h1>
-                <h4>A tool to help you stay on top of your finances.</h4>
+                <h1 style="text-decoration:underline;">Personal FinANTs Guide</h1>
+                <p>A tool to help you stay on top of your finances.</p>
                 <img src="assets/anteater-piggy-bank.png" alt="anteater-piggy-bank" width="150" height="150">
             </div>
             <!-- <button id="get-started-button" class="ui primary large button">Get Started</button> -->
         </div>
     </header>
     
-    <div class="ui container" id="main-app">
-        <div class="button-container">
-            <!-- <div class="ui buttons"> -->
-                <button id="back-button" class="ui primary large button">Back</button>
-                <button id="reset-button" class="ui small button">Reset</button>
-                <button id="next-button" class="ui primary large button">Next</button>
-            <!-- </div> -->
+    <section class="ui container" id="calculator">
+        <div class="ui segment">
+            <h2>Personal Finance Spending Flowchart</h2>
+            <p>"I have $X, what should I do with it?" or
+                "How should I handle my debt/finances/money?" Do the steps in order and don't skip steps that apply to you.</p>
         </div>
+    <div class="ui container" id="main-app">
         <div class="ui grid">
             <div class="six wide column">
                 <div class="ui vertical medium steps">
@@ -359,97 +358,186 @@
             </div>
         </div>
     </div>
-
+    <div class="button-container">
+        <!-- <div class="ui buttons"> -->
+            <button id="back-button" class="ui primary small button">Back</button>
+            <button id="reset-button" class="ui small button">Reset</button>
+            <button id="next-button" class="ui primary small button">Next</button>
+        <!-- </div> -->
+    </div>
+    </section>
     <section class="ui container" id="age_groups">
         <div class="ui segment">
             <h2>Advice and Tips for Different Age-Ranges</h2>
-            <p>Financial advice can vary depending on age group so select the group most relevant to you and being planning your financial future.</p>
+            <p>Financial advice can vary depending on age group so select the group most relevant to you and being planning
+                your financial future.</p>
         </div>
         <div class="ui segment">
             <div class="ui five item menu stackable small" id="age_menu">
-                <a class="item active">
-                Teenagers (15-20)
+                <a class="item">
+                    Teenagers (15-20)
                 </a>
                 <a class="item">
-                Young Adults (18-25)
+                    Young Adults (18-25)
                 </a>
                 <a class="item">
-                Older Young Adults (25-35)
+                    Older Young Adults (25-35)
                 </a>
                 <a class="item">
-                Mid-Career Adults (35-45)
+                    Mid-Career Adults (35-45)
                 </a>
                 <a class="item">
-                Middle-Aged Adults (45-65)
+                    Middle-Aged Adults (45-65)
                 </a>
             </div>
         </div>
-        <div class="ui segment" id="age_groups_content">
-            <div class="ui segment group-intro">
-                <h3 class="ui header">
-                    Introduction
-                </h3>
-                <p>Are you just starting out your independent life, and looking for financial advice on how to adult? Have we got advice for you! Here's a collection of pointers to topics of interest to many young people in the US (and other developed countries although the specifics pertain to the US in some cases).</p>
-                <p>Note that this is financial advice, not general life advice. Only you can know what will make you happy or unhappy, whether you'll profit more from taking a trip or watching your investments grow.</p>
-                <p>If you don't see your favorite topic here (e.g. houses, retirement accounts, investments, etc), be sure to read the later guides.</p>
+        <div class="ui segment" id="age_groups_content" style="margin: 0; padding: 0;">
+            <div class="ui segment content" style="display:none;">
+                <h4 class="ui header">Advice for Teenagers (15-20)</h4>
+                <p>Are you just starting out your independent life, and looking for financial advice on how to adult? Have
+                    we got advice for you! Here's a collection of pointers to topics of interest to many young people in the
+                    US (and other developed countries although the specifics pertain to the US in some cases).</p>
+                <p>Note that this is financial advice, not general life advice. Only you can know what will make you happy
+                    or unhappy, whether you'll profit more from taking a trip or watching your investments grow.</p>
+                <p>If you don't see your favorite topic here (e.g. houses, retirement accounts, investments, etc), be sure
+                    to read the later guides.</p>
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Invest in your education
+                    </div>
+                    <div class="content">
+                        <p class="transition hidden">If you're in high school or a recent high school graduate, you should be planning on attending college or earning a vocational certification of some kind. The best investment you can make is improving your future earnings potential.</p>
+                        <ul>
+                            <li><p>For cost-effective education, it's hard to beat <a href="http://www.marketwatch.com/story/four-reasons-to-choose-community-college-2013-11-15" rel="nofollow">community colleges</a>.  If you're not sure what to do about continuing your education, look into <a href="http://www.payscale.com/college-salary-report/majors-that-pay-you-back/associate" rel="nofollow">two-year degrees</a>, as well as taking credits that <a href="http://www.usnews.com/education/blogs/professors-guide/2009/09/16/10-tips-for-transferring-from-community-college" rel="nofollow">transfer to four-year colleges</a>.  </p></li>
+                            <li><p>If you are looking to head straight to a four-year college, strongly consider going to a four-year state school.</p></li>
+                            <li><p>Do not go to a <a href="https://en.wikipedia.org/wiki/List_of_for-profit_universities_and_colleges" rel="nofollow">for-profit college</a> as they are expensive, generally not well-respected, and credits are very difficult to transfer to an accredited four-year college.</p></li>
+                            <li><p>Make sure the college you choose is accredited and has the following listed on their website:</p>
+                            <ul>
+                            <li>Average starting salary of graduates in their chosen field</li>
+                            <li>Percent of graduates that receive a job in their chosen field within the first 6 months</li>
+                            <li>A great career center that will continually help you find jobs, along with a successful career fair </li>
+                            </ul></li>
+                            <li><p>If you need money to continue your education, learn about <a href="https://studentaid.gov/understand-aid/types/loans" rel="nofollow">student loans</a>.  This is a complicated topic with many options.  Be careful what you do here, since these loans <a href="http://blog.credit.com/2015/06/what-happens-if-i-ignore-my-student-loans-84434/" rel="nofollow">will be yours</a> / your parents until they are paid off!  People who find themselves <a href="http://www.usnews.com/news/articles/2015/06/08/heaviest-college-debt-burdens-fall-on-3-types-of-students" rel="nofollow">in trouble</a> later usually took  out bigger loans (~$100,000) vs. smaller loans (~$20,000).</p></li>
+                            <li><p>Fill out the <a href="https://fafsa.ed.gov/" rel="nofollow">Free Application for Federal Student Aid</a> by the end of June 30 of the year you plan to go to college so that you'll be eligible for grants and federally subsidized student loans. If you aren't quite ready for college, you can use the <a href="https://fafsa.ed.gov/FAFSA/app/f4cForm" rel="nofollow">FAFSA 4Caster</a> to estimate federal grants and loan approvals.</p></li>
+                            <li><p>Avoid taking on loans that exceed the future earning potential of the degree by too large of a factor.  Use the <a href="https://mappingyourfuture.org/paying/debtwizard/index.cfm#debtWizard" rel="nofollow">debt/salary wizard</a> to determine the suggested maximum amount of debt you should incur based upon your projected salary or what salary you should be earning based upon your current debt.</p></li>
+                            <li><p>Some people consider military enlistment or ROTC as a way to pay for college.  That's a valid approach, but it is a big commitment.  Talk to some people in the military or veterans other than your recruiter before you commit.  Also note that dropping out of ROTC can be very expensive so you should probably not enter ROTC if you have any potential medical or mental health issues.</p></li>
+                            </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Have a plan for your education
+                      </div>
+                      <div class="content">
+                        <p>You ideally wouldn't go out and buy a car without doing a bit of research on what existing owners of that make and model had to say. Why would you get into five (or even six!) figures of debt without doing a similar amount of research?
+                            If you're at all on the fence about going to college, or your chosen major, it makes sense to find someone who's gone through your prospective degree program, take them to lunch, and get their feedback on how their path has treated them.</p>
+                            <ul>
+                                <li>Did their degree path make sense for them?</li>
+                                <li>If they could do it again, would they?</li>
+                                <li>What advice would they have for someone considering following in their shoes?</li>
+                                </ul>
+                                <p>Once you've done this, it would behoove you to gather additional data points. Don't just cherry-pick someone who's become a breakout success. Try to talk to people in the middle of the pack, or even some folks who went through the program and failed.
+                                    Consider fallback options as well. If your career plan requires certain things that may not come to pass (such as being accepted into a top ten law school), and your plans are forced to change, what are your options? An undergraduate degree in business or engineering at that point may bear more fruit than a bachelor's in philosophy.</p>
+                                    <h4 id="wiki_think_about_your_career">Think about your career</h4>
+                                    <p>If you're headed to college, think long and hard about getting a degree that won't pay for itself.  For <em>any</em> career, you should talk to several people who work in the field about your education plans and that career path to make sure your plan makes sense.</p>
+                                <h4 id="wiki_what_about_stem.3F">What about STEM?</h4>
+                                <p>A lot of noise has been made lately about STEM careers. However, remember that your working career is going to span multiple decades; that's a very long time to spend doing something you aren't passionate about—or at least enjoy. Virtually nobody wakes up eager to go to work just because of their paycheck so it's important to pick something that excites you, because without passion, you're most likely destined to never be particularly good at your field of study.</p>
+                                <ul>
+                                    <li>Science</li>
+                                    <li>Technology</li>
+                                    <li><a href="https://www.reddit.com/r/personalfinance/wiki/teachme_engineering" rel="nofollow">Engineering</a> (click for more information)</li>
+                                    <li>Math</li>
+                                    </ul>
+                      </div>
+                      <div class="title">
+                        <i class="dropdown icon"></i>
+                        Banking
+                      </div>
+                      <div class="content">
+                        <ul>
+                            <li><p>Generally, if you're a minor, you will need to open a joint account with a parent or guardian. Note that joint bank accounts can be emptied by either account holder at any time so it is strongly recommended you open your own account after you turn 18.</p>
+                            <p>If you don't have a trusted parent or guardian, read the <em><a href="https://www.reddit.com/r/personalfinance/wiki/kicked_out#wiki_financial_accounts" rel="nofollow">Financial Accounts section of the "Kicked Out" wiki page</a></em>.</p></li>
+                            <li><p>When you turn 18 (19 in Alabama), it's definitely time to get a <a href="https://www.reddit.com/r/personalfinance/wiki/banks_and_credit_unions" rel="nofollow">bank account</a> in your own own name (and transition away from joint accounts with your parents). You will no-monthly-fee checking account and a savings account. Credit unions, online banks, and small banks tend to have <a href="http://www.consumerreports.org/banks-credit-unions/choose-the-best-bank-for-you/" rel="nofollow">better customer service</a> than large banks.</p></li>
+                            <li><p>You're not going to get rich off interest, sorry! But you can find better savings interest rates at <a href="https://www.reddit.com/r/personalfinance/wiki/banks_and_credit_unions" rel="nofollow">online-only banks and credit unions</a>. Put away savings as soon as you can, it's a good habit to get into, and start your <a href="https://www.reddit.com/r/personalfinance/wiki/emergencyfunds" rel="nofollow">emergency fund</a>. Investments and retirement savings are covered more in the next several age-range articles. With limited or part-time income, savings are a better bet for now.</p></li>
+                            </ul>
+                      </div>
+                      <div class="title">
+                          <i class="dropdown icon"></i>
+                          Credit
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><p>College is often when young adults start building credit via student loans and credit cards, but it's also when a lot of people start a long relationship with expensive debt.</p></li>
+                                <li><p>If you are responsible with money and have income, applying for a <a href="https://www.reddit.com/r/personalfinance/wiki/creditcards" rel="nofollow">credit card</a> can be a reasonable move for many people.  This is different than the debit card your bank will provide with your account. It's a very good way to independently establish credit without paying interest. A <a href="https://clark.com/credit-cards/best-student-credit-cards/" rel="nofollow">student credit card</a> or <a href="https://www.nerdwallet.com/blog/top-credit-cards/nerdwallets-best-secured-credit-cards/" rel="nofollow">secured credit card</a> is probably your best option. Read the <a href="/r/personalfinance/wiki/credit_building" rel="nofollow">credit building wiki</a> for more advice on this topic.</p></li>
+                                <li><p>Pay the balance in full every month!  If you can't do that or you're not sure if you are ready, then you should not get a credit card.   You can always build credit later when you have a more steady income and more experience handling money.</p></li>
+                                </ul>
+                        </div>
+                        <div class="title">
+                          <i class="dropdown icon"></i>
+                          Working
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><p>You may find yourself working part-time or even full-time.  This is a good time to learn about your <a href="http://www.nolo.com/legal-encyclopedia/employee-rights" rel="nofollow">rights and responsibilities</a>  as an employee, including <a href="http://money.howstuffworks.com/wage2.htm" rel="nofollow">how you are paid</a> and <a href="https://www.irs.com/articles/understanding-payroll-and-withholding-taxes" rel="nofollow">taxed</a>, as well as what your employer can legally do with your hours and even when you can be let go.  Fortunately, taxes are low for most young people (if only because their income is low...), and you may even get a refund if you file taxes!  While your lifetime income is the single biggest determinant in your personal finance situation, at this age, your priority is not on current income as much as preparing for the future, thus the focus on education.  </p></li>
+                                <li><p>If you're earning extra money, consider saving it as an emergency fund and for education expenses, following the advice in <a href="http://www.reddit.com/r/personalfinance/wiki/commontopics" rel="nofollow">"I have $X, what should I do with it?"</a>.</p></li>
+                                </ul>
+                        </div>
+                        <div class="title">
+                          <i class="dropdown icon"></i>
+                          Budgeting and Saving
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><p>This is also the time to start learning about <a href="https://www.reddit.com/r/personalfinance/wiki/budgeting" rel="nofollow">budgeting</a> if you have significant responsibilities; more on this in future posts. </p></li>
+                                <li><p>If you want to save money, live with your parents as long as you can.  Seriously!   But there comes a time when you want to / have to leave, and you'll need to rent a place.  Landlords will want to see that <a href="http://www.myfirstapartment.com/2015/06/how-much-rent-can-i-afford-on-my-income-two-simple-ways-to-estimate/" rel="nofollow">you have income</a>, so try to keep payments below <a href="http://www.apartmenttherapy.com/how-much-rent-you-can-really-afford-renters-solutions-186462" rel="nofollow">30% of your takehome pay</a>.  You may need a co-signer if you have minimal credit history.   You'll need first month's rent and a security deposit up front, and even utility deposits sometimes.  Read your lease before you sign it, and know your <a href="https://www.ziprealty.com/buy/renters-rights.jsp" rel="nofollow">rights and responsibilities</a> as a tenant, and what organizations can help you if you encounter issues.  </p></li>
+                                <li><p>Roommates are a popular way to save money on rent.  Be aware of the issues that can come up with roommates though, since circumstances change, and you may be on the hook for their share.  Have all roommates on the lease.  You might even want a <a href="http://www.nolo.com/legal-encyclopedia/free-books/renters-rights-book/chapter6-2.html" rel="nofollow">roommate agreement</a>.  Perhaps Sheldon Cooper has it right after all?  Alternatively, consider renting a room from someone who owns their own house.</p></li>
+                                <li><p>Aside from rent, cars are the biggest expenditure for many young people.  You can save a <a href="https://www.nerdwallet.com/blog/loans/total-cost-owning-car/" rel="nofollow">lot of money</a> if you don't need to pay for one!   It's not just the purchase cost.  There's gas, repairs, and especially <a href="https://www.reddit.com/r/personalfinance/wiki/carinsurance" rel="nofollow">car insurance</a>, which is  <a href="http://www.carinsurance.com/Articles/cheapest-minimum-liability-insurance.aspx" rel="nofollow">very expensive</a> for young people, typically at least $100/month, and can even be $200/month in some places, or if you have a tickets / accidents. </p></li>
+                                <li><p>Your best bet if you do need a car is to save up enough cash to buy a <a href="http://www.carsdirect.com/used-car-buying/best-5-reliable-used-car-models" rel="nofollow">reliable used car</a> without needing a loan so you can avoid finance charges and make your own insurance choices.  Above all else, make sure you follow the <a href="/r/personalfinance/wiki/vehicles" rel="nofollow">budgeting advice in the vehicles wiki</a>.  And if you do need to finance a car, be very careful of financing offers for young people.  Double-digit interest rates are a Bad Thing.  You do not want to "build credit" that way! The loan and the car are different things.  You can't give back the car and be done with the loan, since you will typically be "<a href="http://www.edmunds.com/car-buying/being-upside-down.html" rel="nofollow">underwater</a>" and owe more than the car is worth.  </p></li>
+                                <li><p>Choose your spending wisely.  Money spent is unavailable for anything else. Make sure it was your highest priority use of that money.</p></li>
+                                </ul>
+                        </div>
+                        <div class="title">
+                          <i class="dropdown icon"></i>
+                          Related Wiki Pages
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li><a href="https://www.reddit.com/r/personalfinance/wiki/kicked_out" rel="nofollow">What to do if you've been kicked out of your family home as a teenager</a></li>
+                                <li><a href="https://www.reddit.com/r/personalfinance/wiki/credit_building" rel="nofollow">Building credit</a></li>
+                                <li><a href="https://www.reddit.com/r/personalfinance/wiki/sideincome" rel="nofollow">Extra income (on the side)</a></li>
+                                <li><a href="https://www.reddit.com/r/personalfinance/wiki/studentloans" rel="nofollow">Student loans</a></li>
+                                <li>Read one or two books from the <a href="http://www.reddit.com/r/personalfinance/wiki/readinglist" rel="nofollow">reading list</a>.</li>
+                                </ul>
+                        </div>
+                        <div class="title">
+                            <i class="dropdown icon"></i>
+                            Acknowledgements
+                          </div>
+                          <div class="content">
+                            <p>This guide incorporates <a href="https://www.reddit.com/r/personalfinance/comments/4tfc76/eli18_personal_finance_tips_for_young_adults_us/" rel="nofollow">the ELI18 guide</a> written by <a href="/u/yes_its_him" rel="nofollow">/u/yes_its_him</a>.</p>
+                            </div>
+                            
+                </div>
             </div>
-            
-            <!-- <h5 class="ui horizontal divider header">
-                Advice Categories
-            </h5> -->
-            <!-- <p class="ui horizonal divider"></p> -->
-            <div class="ui accordion">
-                <div class="title">
-                  <i class="dropdown icon"></i>
-                  Invest in your education
-                </div>
-                <div class="content">
-                  <p class="transition hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit asperiores culpa ducimus porro distinctio quas atque necessitatibus soluta repellat fuga reiciendis, consequatur doloremque blanditiis reprehenderit qui dolorem officiis ex? Dignissimos.</p>
-                </div>
-                <div class="title">
-                  <i class="dropdown icon"></i>
-                  Have a plan for your education
-                </div>
-                <div class="content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod debitis dicta ipsa repellendus! Beatae fugit obcaecati eos, magnam nostrum ducimus impedit quos tempore, sequi velit ipsam, reprehenderit tenetur deserunt a?</p>
-                </div>
-                <div class="title">
-                  <i class="dropdown icon"></i>
-                  Banking
-                </div>
-                <div class="content">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit aperiam nisi. Qui fugiat, neque voluptate esse possimus unde. Temporibus id libero inventore animi qui! Quia voluptas voluptatum ipsa vel.</p>
-                </div>
-                <div class="title">
-                    <i class="dropdown icon"></i>
-                    Credit
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit aperiam nisi. Qui fugiat, neque voluptate esse possimus unde. Temporibus id libero inventore animi qui! Quia voluptas voluptatum ipsa vel.</p>
-                  </div>
-                  <div class="title">
-                    <i class="dropdown icon"></i>
-                    Working
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit aperiam nisi. Qui fugiat, neque voluptate esse possimus unde. Temporibus id libero inventore animi qui! Quia voluptas voluptatum ipsa vel.</p>
-                  </div>
-                  <div class="title">
-                    <i class="dropdown icon"></i>
-                    Budgeting and Saving
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit aperiam nisi. Qui fugiat, neque voluptate esse possimus unde. Temporibus id libero inventore animi qui! Quia voluptas voluptatum ipsa vel.</p>
-                  </div>
-                  <div class="title">
-                    <i class="dropdown icon"></i>
-                    Related Wiki Pages
-                  </div>
-                  <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum fugit aperiam nisi. Qui fugiat, neque voluptate esse possimus unde. Temporibus id libero inventore animi qui! Quia voluptas voluptatum ipsa vel.</p>
-                  </div>
-              </div>
+
+            <div class="ui segment content" style="display:none;">
+                <h4 class="">Advice for Young Adults (18-25)</h4>
+                <p>Coming soon.</p>
+            </div>
+            <div class="ui segment content" style="display:none;">
+                <h4 class="">Advice for Older Young Adults (25-35)</h4>
+                <p>Coming soon.</p>
+            </div>
+            <div class="ui segment content" style="display:none;">
+                <h4 class="">Advice for Mid-Career Adults (35-45)</h4>
+                <p>Coming soon.</p>
+            </div>
+            <div class="ui segment content" style="display:none;">
+                <h4 class="">Advice for Middle-Aged Adults (45-65)</h4>
+                <p>Coming soon.</p>
+            </div>
         </div>
+    
     </section>
 
     <section class="ui container" id="calculator">
