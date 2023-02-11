@@ -32,7 +32,7 @@
     <header> 
         <div class="ui container">
             <div class="top banner">
-                <h1 style="text-decoration:underline;">Personal FinANTs Guide</h1>
+                <h1 style="text-decoration:none;">Personal FinANTs Guide</h1>
                 <p>A tool to help you stay on top of your finances.</p>
                 <img src="assets/anteater-piggy-bank.png" alt="anteater-piggy-bank" width="150" height="150">
             </div>
@@ -46,325 +46,325 @@
             <p>"I have $X, what should I do with it?" or
                 "How should I handle my debt/finances/money?" Do the steps in order and don't skip steps that apply to you.</p>
         </div>
-    <div class="ui container" id="main-app">
-        <div class="ui grid">
-            <div class="six wide column">
-                <div class="ui vertical medium steps">
-                    <div class="active step" id="step0">
-                        <i class="check icon"></i>
-                        <div class="content">
-                        <div class="title">Step 0</div>
-                        <div class="description">Budget and reduce expenses, set realistic goals</div>
+        <div class="button-container">
+            <!-- <div class="ui buttons"> -->
+                <button id="back-button" class="ui primary small button">Back</button>
+                <button id="reset-button" class="ui small button">Reset</button>
+                <button id="next-button" class="ui primary small button">Next</button>
+            <!-- </div> -->
+        </div>
+        <div class="ui container" id="main-app">
+            <div class="ui grid">
+                <div class="six wide column">
+                    <div class="ui vertical medium steps">
+                        <div class="active step" id="step0">
+                            <i class="check icon"></i>
+                            <div class="content">
+                            <div class="title">Step 0</div>
+                            <div class="description">Budget and reduce expenses, set realistic goals</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step1">
-                        <i class="wait icon"></i>
-                        <div class="content">
-                        <div class="title">Step 1</div>
-                        <div class="description">Build an emergency fund</div>
+                        <div class="disabled step" id="step1">
+                            <i class="wait icon"></i>
+                            <div class="content">
+                            <div class="title">Step 1</div>
+                            <div class="description">Build an emergency fund</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step2">
-                        <i class="wait icon"></i>
-                        <div class="content">
-                        <div class="title">Step 2</div>
-                        <div class="description">Employer-sponsored matching funds</div>
+                        <div class="disabled step" id="step2">
+                            <i class="wait icon"></i>
+                            <div class="content">
+                            <div class="title">Step 2</div>
+                            <div class="description">Employer-sponsored matching funds</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step3">
-                        <i class="wait icon"></i>
-                        <div class="content">
-                            <div class="title">Step 3</div>
-                            <div class="description">Pay down high/moderate interest debts</div>
+                        <div class="disabled step" id="step3">
+                            <i class="wait icon"></i>
+                            <div class="content">
+                                <div class="title">Step 3</div>
+                                <div class="description">Pay down high/moderate interest debts</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step4">
-                        <i class="wait icon"></i>
-                        <div class="content">
-                            <div class="title">Step 4</div>
-                            <div class="description">Contribute to an IRA</div>
+                        <div class="disabled step" id="step4">
+                            <i class="wait icon"></i>
+                            <div class="content">
+                                <div class="title">Step 4</div>
+                                <div class="description">Contribute to an IRA</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step5">
-                        <i class="wait icon"></i>
-                        <div class="content">
-                            <div class="title">Step 5</div>
-                            <div class="description">Save more for retirement</div>
+                        <div class="disabled step" id="step5">
+                            <i class="wait icon"></i>
+                            <div class="content">
+                                <div class="title">Step 5</div>
+                                <div class="description">Save more for retirement</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step6">
-                        <i class="wait icon"></i>
-                        <div class="content">
-                            <div class="title">Step 6</div>
-                            <div class="description">Save for other goals & advanced methods</div>
+                        <div class="disabled step" id="step6">
+                            <i class="wait icon"></i>
+                            <div class="content">
+                                <div class="title">Step 6</div>
+                                <div class="description">Save for other goals & advanced methods</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="disabled step" id="step7">
-                        <i class="check circle outline icon"></i>
-                        <div class="content">
-                            <div class="title">Done</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ten wide column">
-                <div class="ui segment" id="step0Box">
-                    
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>Create a Budget
-                        </div>
-                        <div class="content active">
-                            <p>Fundamental to a sound financial footing is knowing where your money is going. Budgeting helps you see your sources of income less your expenses. You should minimize your expenses to the extent practical. Housing costs, utilities, and basic sustenance are harder to eliminate than "entertainment," eating out, or clothing expenses.</p>
-
-                            <p>Free online tools (like Mint.com and Personal Capital) or spreadsheets like those found in the Wiki's Tools page can help you track your expenses.</p>
-
-                            <p>Once your budget is figured out, you need to figure out what your goals are. Secure retirement? Buy a house? Save for a car? We'll get to specifics on how to save for these a little later on.</p>
-
-                        </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>Pay Rent/Mortgage
-                        </div>
-                        <div class="content">
-                            <p>(Including renters or homeowners insurance, if required)</p>
-                        </div>
-                        <div class="title"><i class="dropdown icon"></i>Pay Essential Items</div>
-                        <div class="content">
-                            <p>(Power, water, heat, toiletries, etc.)</p>
-                        </div>
-                        <div class="title"><i class="dropdown icon"></i>Pay Income Earning Expenses</div>
-                        <div class="content">
-                            <p>(Necessary transportation expenses, possibly Internet/phone, anything required to continue earning income)</p>
-                        </div>
-                        <div class="title"><i class="dropdown icon"></i>Pay Health Care</div>
-                        <div class="content">
-                            <p>(Health insurance and health care expenses)</p>
-                        </div>
-                        <div class="title"><i class="dropdown icon"></i>Make Minimum Payments On All Debts & Loans</div>
-                        <div class="content">
-                            <p>(Student loans, credit cards, etc.)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui segment" id="step1Box" style="display: none;">
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>Build Small Emergency Fund
-                        </div>
-                        <div class="content active">
-                            <p>An emergency fund should be a relatively liquid sum of money that you don't touch unless something unexpected comes up. Unexpected travel, essential appliance replacement, and sudden medical procedures are all user-submitted examples of emergency funds in action. If you need to draw from your emergency fund at any time, your first priority as soon as you get back on your feet should be to replenish it. Treat your emergency fund right and it will return the favor.</p>
-
-                            <p><b>How should I size my emergency fund?</b> For most people, 3 to 6 months of expenses is good. A larger emergency fund (e.g., 9 to 12 months) may be warranted if your income is variable or uncertain.</p>
-
-                            <p>tldr; (Either $1,000 or one months' worth of expenses, whichever is greater; use a savings or checking account.)</p>
-                        </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>Pay Any Non-Essential Bills in Full
-                        </div>
-                        <div class="content">
-                            <p>(Cable, Internet, phone, etc.)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui segment" id="step2Box" style="display: none;">
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>Does your employer offer a retirement account with an employer match?
-                        </div>
-                        <div class="content active">
-                            <div class="ui attached segment">
-                                <div class="ui two top attached buttons">
-                                  <button class="ui button yes-button" id="yes-button-1">Yes</button>
-                                  <button class="ui button no-button" id="no-button-1">No</button>
-                                </div>
-                                <div class="ui attached segment" id="yes-content-1" style="display: none;">
-                                    <p>Contribute the amount needed to get the full employer match, but nothing above that amount.</p>
-                                </div>
-                                <div class="ui attached segment" id="no-content-1" style="display: none;">
-                                    <p>Move on the next step and consider asking your employer to match contributions.</p>
-                                </div>
+                        <div class="disabled step" id="step7">
+                            <i class="check circle outline icon"></i>
+                            <div class="content">
+                                <div class="title">Done</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="ui segment" id="step3Box" style="display: none;">
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>High Interest Debt
-                        </div>
-                        <div class="content active">
-                            <div class="ui attached segment">
-                                <h4>Do you have any high interest debt? (i.e., debt with an interest rate of 10% or higher)</h4>
-                                <div class="ui two top attached buttons">
-                                  <button class="ui button yes-button" id="yes-button-2">Yes</button>
-                                  <button class="ui button no-button" id="no-button-2">No</button>
-                                </div>
-                                <div class="ui attached segment" id="yes-content-2" style="display: none;">
-                                    <p>Evaluate the merits of the "Avalanche" and "Snowball" methods and their advantages in your personal finance financial/pyschological situation and apply accordingly to pay off these debts.</p>
+                <div class="ten wide column">
+                    <div class="ui segment" id="step0Box">
+                        
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>Create a Budget
+                            </div>
+                            <div class="content active">
+                                <p>Fundamental to a sound financial footing is knowing where your money is going. Budgeting helps you see your sources of income less your expenses. You should minimize your expenses to the extent practical. Housing costs, utilities, and basic sustenance are harder to eliminate than "entertainment," eating out, or clothing expenses.</p>
 
-                                    <p>There are two main methods of paying down debt:</p>
-                                    <ul>
-                                        <li><p>With the <strong>avalanche</strong> method, debts are paid down in order of interest rate, starting with the debt that carries the highest interest rate.  This is the financially optimal method of paying down debt, and you will pay less money overall compared to the snowball method.</p></li>
-                                        <li><p>With the <strong>snowball</strong> method, popularized by Dave Ramsey, debts are paid down in order of balance size, starting with the smallest.  Paying off small debts first may give you a psychological boost and improve one's cash flow situation, as paid off debts free up minimum payments.  The downside is that larger loans (that may be at higher interest rates) are left untouched for longer, costing more in the long run.</p></li>
-                                        </ul>
+                                <p>Free online tools (like Mint.com and Personal Capital) or spreadsheets like those found in the Wiki's Tools page can help you track your expenses.</p>
 
-                                    
-                                </div>
-                                <div class="ui attached segment" id="no-content-2" style="display: none;">
-                                    <p>Increase Emergency Fund to 3-6 Months Living Expenses (Use a savings or checking account).</p>
-                                </div>
+                                <p>Once your budget is figured out, you need to figure out what your goals are. Secure retirement? Buy a house? Save for a car? We'll get to specifics on how to save for these a little later on.</p>
+
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>Pay Rent/Mortgage
+                            </div>
+                            <div class="content">
+                                <p>(Including renters or homeowners insurance, if required)</p>
+                            </div>
+                            <div class="title"><i class="dropdown icon"></i>Pay Essential Items</div>
+                            <div class="content">
+                                <p>(Power, water, heat, toiletries, etc.)</p>
+                            </div>
+                            <div class="title"><i class="dropdown icon"></i>Pay Income Earning Expenses</div>
+                            <div class="content">
+                                <p>(Necessary transportation expenses, possibly Internet/phone, anything required to continue earning income)</p>
+                            </div>
+                            <div class="title"><i class="dropdown icon"></i>Pay Health Care</div>
+                            <div class="content">
+                                <p>(Health insurance and health care expenses)</p>
+                            </div>
+                            <div class="title"><i class="dropdown icon"></i>Make Minimum Payments On All Debts & Loans</div>
+                            <div class="content">
+                                <p>(Student loans, credit cards, etc.)</p>
                             </div>
                         </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>Moderate Interest Debt
-                        </div>
-                        <div class="content">
-                            <div class="ui attached segment">
-                                <h4>Do you have any moderate interest debt? (i.e., remaining debt over 4-5% interest rate, excluding mortgage)</h4>
-                                <div class="ui two top attached buttons">
-                                  <button class="ui button yes-button" id="yes-button-3">Yes</button>
-                                  <button class="ui button no-button" id="no-button-3">No</button>
-                                </div>
-                                <div class="ui attached segment" id="yes-content-3" style="display: none;">
-                                    <p>Evaluate the merits of the "Avalanche" and "Snowball" methods and their advantages in your personal finance financial/pyschological situation and apply accordingly to pay off these debts.</p>
+                    </div>
+                    <div class="ui segment" id="step1Box" style="display: none;">
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>Build Small Emergency Fund
+                            </div>
+                            <div class="content active">
+                                <p>An emergency fund should be a relatively liquid sum of money that you don't touch unless something unexpected comes up. Unexpected travel, essential appliance replacement, and sudden medical procedures are all user-submitted examples of emergency funds in action. If you need to draw from your emergency fund at any time, your first priority as soon as you get back on your feet should be to replenish it. Treat your emergency fund right and it will return the favor.</p>
 
-                                    <p>There are two main methods of paying down debt:</p>
-                                    <ul>
-                                        <li><p>With the <strong>avalanche</strong> method, debts are paid down in order of interest rate, starting with the debt that carries the highest interest rate.  This is the financially optimal method of paying down debt, and you will pay less money overall compared to the snowball method.</p></li>
-                                        <li><p>With the <strong>snowball</strong> method, popularized by Dave Ramsey, debts are paid down in order of balance size, starting with the smallest.  Paying off small debts first may give you a psychological boost and improve one's cash flow situation, as paid off debts free up minimum payments.  The downside is that larger loans (that may be at higher interest rates) are left untouched for longer, costing more in the long run.</p></li>
-                                        </ul>
-                                </div>
-                                <div class="ui attached segment" id="no-content-3" style="display: none;">
-                                    <p>Move on to the next step.</p>
+                                <p><b>How should I size my emergency fund?</b> For most people, 3 to 6 months of expenses is good. A larger emergency fund (e.g., 9 to 12 months) may be warranted if your income is variable or uncertain.</p>
+
+                                <p>tldr; (Either $1,000 or one months' worth of expenses, whichever is greater; use a savings or checking account.)</p>
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>Pay Any Non-Essential Bills in Full
+                            </div>
+                            <div class="content">
+                                <p>(Cable, Internet, phone, etc.)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui segment" id="step2Box" style="display: none;">
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>Does your employer offer a retirement account with an employer match?
+                            </div>
+                            <div class="content active">
+                                <div class="ui attached segment">
+                                    <div class="ui two top attached buttons">
+                                    <button class="ui button yes-button" id="yes-button-1">Yes</button>
+                                    <button class="ui button no-button" id="no-button-1">No</button>
+                                    </div>
+                                    <div class="ui attached segment" id="yes-content-1" style="display: none;">
+                                        <p>Contribute the amount needed to get the full employer match, but nothing above that amount.</p>
+                                    </div>
+                                    <div class="ui attached segment" id="no-content-1" style="display: none;">
+                                        <p>Move on the next step and consider asking your employer to match contributions.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ui segment" id="step4Box" style="display: none;">
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>Roth vs Traditional IRA
-                        </div>
-                        <div class="content active">
-                            <p>The next step is to contribute to an IRA for the current tax year. You can also contribute for the previous tax year if it's between January 1st and April 15th. See the <a href="https://www.reddit.com/r/personalfinance/wiki/iras/">IRA wiki</a> for more information on IRAs. Try to save up to 15% of your gross income until reaching the annual limit of $6,500 (in 2023).</p>
-                            <p>Evaluate the merits of a Roth vs Traditional IRA in the context of your personal financial situation and max the yearly contributions accordingly.</p>
-                            <p>Read <a href="https://www.reddit.com/r/personalfinance/wiki/rothortraditional/"><i>Roth or Traditional.</i></a></p>
-                        </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>Large Purchases or Investments
-                          </div>
-                          <div class="content">
-                            <div class="ui attached segment">
-                                <h4>Are you expecting any large, <i>required</i> purchases or personal investments in the near future?
-                                    (College, professional certifications, a car so you can get to work, etc.)</h4>
-                                <div class="ui two top attached buttons">
-                                  <button class="ui button yes-button" id="yes-button-4">Yes</button>
-                                  <button class="ui button no-button" id="no-button-4">No</button>
+                    <div class="ui segment" id="step3Box" style="display: none;">
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>High Interest Debt
+                            </div>
+                            <div class="content active">
+                                <div class="ui attached segment">
+                                    <h4>Do you have any high interest debt? (i.e., debt with an interest rate of 10% or higher)</h4>
+                                    <div class="ui two top attached buttons">
+                                    <button class="ui button yes-button" id="yes-button-2">Yes</button>
+                                    <button class="ui button no-button" id="no-button-2">No</button>
+                                    </div>
+                                    <div class="ui attached segment" id="yes-content-2" style="display: none;">
+                                        <p>Evaluate the merits of the "Avalanche" and "Snowball" methods and their advantages in your personal finance financial/pyschological situation and apply accordingly to pay off these debts.</p>
+
+                                        <p>There are two main methods of paying down debt:</p>
+                                        <ul>
+                                            <li><p>With the <strong>avalanche</strong> method, debts are paid down in order of interest rate, starting with the debt that carries the highest interest rate.  This is the financially optimal method of paying down debt, and you will pay less money overall compared to the snowball method.</p></li>
+                                            <li><p>With the <strong>snowball</strong> method, popularized by Dave Ramsey, debts are paid down in order of balance size, starting with the smallest.  Paying off small debts first may give you a psychological boost and improve one's cash flow situation, as paid off debts free up minimum payments.  The downside is that larger loans (that may be at higher interest rates) are left untouched for longer, costing more in the long run.</p></li>
+                                            </ul>
+
+                                        
+                                    </div>
+                                    <div class="ui attached segment" id="no-content-2" style="display: none;">
+                                        <p>Increase Emergency Fund to 3-6 Months Living Expenses (Use a savings or checking account).</p>
+                                    </div>
                                 </div>
-                                <div class="ui attached segment" id="yes-content-4" style="display: none;">
-                                    <p>Save the amount needed for these expenses in a savings or checking account.</p>
-                                </div>
-                                <div class="ui attached segment" id="no-content-4" style="display: none;">
-                                    <p>Move on to the next step.</p>
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>Moderate Interest Debt
+                            </div>
+                            <div class="content">
+                                <div class="ui attached segment">
+                                    <h4>Do you have any moderate interest debt? (i.e., remaining debt over 4-5% interest rate, excluding mortgage)</h4>
+                                    <div class="ui two top attached buttons">
+                                    <button class="ui button yes-button" id="yes-button-3">Yes</button>
+                                    <button class="ui button no-button" id="no-button-3">No</button>
+                                    </div>
+                                    <div class="ui attached segment" id="yes-content-3" style="display: none;">
+                                        <p>Evaluate the merits of the "Avalanche" and "Snowball" methods and their advantages in your personal finance financial/pyschological situation and apply accordingly to pay off these debts.</p>
+
+                                        <p>There are two main methods of paying down debt:</p>
+                                        <ul>
+                                            <li><p>With the <strong>avalanche</strong> method, debts are paid down in order of interest rate, starting with the debt that carries the highest interest rate.  This is the financially optimal method of paying down debt, and you will pay less money overall compared to the snowball method.</p></li>
+                                            <li><p>With the <strong>snowball</strong> method, popularized by Dave Ramsey, debts are paid down in order of balance size, starting with the smallest.  Paying off small debts first may give you a psychological boost and improve one's cash flow situation, as paid off debts free up minimum payments.  The downside is that larger loans (that may be at higher interest rates) are left untouched for longer, costing more in the long run.</p></li>
+                                            </ul>
+                                    </div>
+                                    <div class="ui attached segment" id="no-content-3" style="display: none;">
+                                        <p>Move on to the next step.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ui segment" id="step5Box" style="display: none;">
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>Are you currently saving <i>at least</i> 15% of your pre-tax income for retirement?
+                    <div class="ui segment" id="step4Box" style="display: none;">
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>Roth vs Traditional IRA
+                            </div>
+                            <div class="content active">
+                                <p>The next step is to contribute to an IRA for the current tax year. You can also contribute for the previous tax year if it's between January 1st and April 15th. See the <a href="https://www.reddit.com/r/personalfinance/wiki/iras/">IRA wiki</a> for more information on IRAs. Try to save up to 15% of your gross income until reaching the annual limit of $6,500 (in 2023).</p>
+                                <p>Evaluate the merits of a Roth vs Traditional IRA in the context of your personal financial situation and max the yearly contributions accordingly.</p>
+                                <p>Read <a href="https://www.reddit.com/r/personalfinance/wiki/rothortraditional/"><i>Roth or Traditional.</i></a></p>
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>Large Purchases or Investments
+                            </div>
+                            <div class="content">
+                                <div class="ui attached segment">
+                                    <h4>Are you expecting any large, <i>required</i> purchases or personal investments in the near future?
+                                        (College, professional certifications, a car so you can get to work, etc.)</h4>
+                                    <div class="ui two top attached buttons">
+                                    <button class="ui button yes-button" id="yes-button-4">Yes</button>
+                                    <button class="ui button no-button" id="no-button-4">No</button>
+                                    </div>
+                                    <div class="ui attached segment" id="yes-content-4" style="display: none;">
+                                        <p>Save the amount needed for these expenses in a savings or checking account.</p>
+                                    </div>
+                                    <div class="ui attached segment" id="no-content-4" style="display: none;">
+                                        <p>Move on to the next step.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="content active">
-                            <div class="ui attached segment">
-                                <div class="ui two top attached buttons">
-                                  <button class="ui button yes-button" id="yes-button-5">Yes</button>
-                                  <button class="ui button no-button" id="no-button-5">No</button>
-                                </div>
-                                <div class="ui attached segment" id="yes-content-5" style="display: none;">
-                                    <p>Move on to HSA Investing in the next step.</p> 
-                                </div>
-                                <div class="ui attached segment" id="no-content-5" style="display: none;">
-                                    <div class="ui attached segment">
-                                        <h4>Does your employer offer a 401(k), 403(b), or similar retirement plan into which you could save more money?</h4>
-                                        <div class="ui two top attached buttons">
-                                          <button class="ui button yes-button" id="yes-button-6">Yes</button>
-                                          <button class="ui button no-button" id="no-button-6">No</button>
-                                        </div>
-                                        <div class="ui attached segment" id="yes-content-6" style="display: none;">
-                                            <p>Increase contributions until you have reached 15% pre-tax income being saved for retirement.</p> 
-                                        </div>
-                                        <div class="ui attached segment" id="no-content-6" style="display: none;">
-                                            <p>If self-employed, contribute to an Individual 401(k), SEP-IRA, or SIMPLE IRA to reach 15% pre-tax income saved; if not self employed, contribute to a taxable account to reach this goal.</p>
+                    </div>
+                    <div class="ui segment" id="step5Box" style="display: none;">
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>Are you currently saving <i>at least</i> 15% of your pre-tax income for retirement?
+                            </div>
+                            <div class="content active">
+                                <div class="ui attached segment">
+                                    <div class="ui two top attached buttons">
+                                    <button class="ui button yes-button" id="yes-button-5">Yes</button>
+                                    <button class="ui button no-button" id="no-button-5">No</button>
+                                    </div>
+                                    <div class="ui attached segment" id="yes-content-5" style="display: none;">
+                                        <p>Move on to HSA Investing in the next step.</p> 
+                                    </div>
+                                    <div class="ui attached segment" id="no-content-5" style="display: none;">
+                                        <div class="ui attached segment">
+                                            <h4>Does your employer offer a 401(k), 403(b), or similar retirement plan into which you could save more money?</h4>
+                                            <div class="ui two top attached buttons">
+                                            <button class="ui button yes-button" id="yes-button-6">Yes</button>
+                                            <button class="ui button no-button" id="no-button-6">No</button>
+                                            </div>
+                                            <div class="ui attached segment" id="yes-content-6" style="display: none;">
+                                                <p>Increase contributions until you have reached 15% pre-tax income being saved for retirement.</p> 
+                                            </div>
+                                            <div class="ui attached segment" id="no-content-6" style="display: none;">
+                                                <p>If self-employed, contribute to an Individual 401(k), SEP-IRA, or SIMPLE IRA to reach 15% pre-tax income saved; if not self employed, contribute to a taxable account to reach this goal.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="ui segment" id="step6Box" style="display: none;">
-                    <div class="ui styled accordion">
-                        <div class="title active">
-                          <i class="dropdown icon"></i>Do you have a qualified high-deductible health plan and are thus eligible for an investable HSA?
-                        </div>
-                        <div class="content active">
-                            <div class="ui attached segment">
-                                <div class="ui two top attached buttons">
-                                  <button class="ui button yes-button" id="yes-button-7">Yes</button>
-                                  <button class="ui button no-button" id="no-button-7">No</button>
-                                </div>
-                                <div class="ui attached segment" id="yes-content-7" style="display: none;">
-                                    <p>Max yearly HSA contributions.</p> 
-                                </div>
-                                <div class="ui attached segment" id="no-content-7" style="display: none;">
-                                    <div class="ui attached segment">
-                                        <h4>Do you have children and wish to help pay for some or all of their college expenses?</h4>
-                                        <div class="ui two top attached buttons">
-                                          <button class="ui button yes-button" id="yes-button-8">Yes</button>
-                                          <button class="ui button no-button" id="no-button-8">No</button>
-                                        </div>
-                                        <div class="ui attached segment" id="yes-content-8" style="display: none;">
-                                            <p>Evaluate available savings/investment options, such as a 529 plan, and contribute accordingly.</p> 
-                                        </div>
-                                        <div class="ui attached segment" id="no-content-8" style="display: none;">
-                                            <p>At this point, you have some options on how to proceed, and it is completely up to you and your personal goals and desires.</p>
+                    <div class="ui segment" id="step6Box" style="display: none;">
+                        <div class="ui styled accordion">
+                            <div class="title active">
+                            <i class="dropdown icon"></i>Do you have a qualified high-deductible health plan and are thus eligible for an investable HSA?
+                            </div>
+                            <div class="content active">
+                                <div class="ui attached segment">
+                                    <div class="ui two top attached buttons">
+                                    <button class="ui button yes-button" id="yes-button-7">Yes</button>
+                                    <button class="ui button no-button" id="no-button-7">No</button>
+                                    </div>
+                                    <div class="ui attached segment" id="yes-content-7" style="display: none;">
+                                        <p>Max yearly HSA contributions.</p> 
+                                    </div>
+                                    <div class="ui attached segment" id="no-content-7" style="display: none;">
+                                        <div class="ui attached segment">
+                                            <h4>Do you have children and wish to help pay for some or all of their college expenses?</h4>
+                                            <div class="ui two top attached buttons">
+                                            <button class="ui button yes-button" id="yes-button-8">Yes</button>
+                                            <button class="ui button no-button" id="no-button-8">No</button>
+                                            </div>
+                                            <div class="ui attached segment" id="yes-content-8" style="display: none;">
+                                                <p>Evaluate available savings/investment options, such as a 529 plan, and contribute accordingly.</p> 
+                                            </div>
+                                            <div class="ui attached segment" id="no-content-8" style="display: none;">
+                                                <p>At this point, you have some options on how to proceed, and it is completely up to you and your personal goals and desires.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>Would you like to retire early?
-                        </div>
-                        <div class="content">
-                            <p>Max out 401(k), 403(b), or other employer sponsored account, consider the "mega backdoor Roth IRA", then use a taxable account.</p>
-                        </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>Do you have more immediate goals?
-                        </div>
-                        <div class="content">
-                            <p>Use savings for goals sooner than 3-5 years, a conservative mix of stocks and bonds for goals more than 3-5 years away.
-                                (Common examples include down payments for homes, saving for vehicles, paying down a mortgage, and vacation funds.)</p>
+                            <div class="title">
+                                <i class="dropdown icon"></i>Would you like to retire early?
+                            </div>
+                            <div class="content">
+                                <p>Max out 401(k), 403(b), or other employer sponsored account, consider the "mega backdoor Roth IRA", then use a taxable account.</p>
+                            </div>
+                            <div class="title">
+                                <i class="dropdown icon"></i>Do you have more immediate goals?
+                            </div>
+                            <div class="content">
+                                <p>Use savings for goals sooner than 3-5 years, a conservative mix of stocks and bonds for goals more than 3-5 years away.
+                                    (Common examples include down payments for homes, saving for vehicles, paying down a mortgage, and vacation funds.)</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="ui segment" id="step7Box" style="display: none;">
-                    <h3>Congratulations! You have reached the end of the flowchart!</h3>
-                    <img src="assets/roadmap.png" alt="roadmap" width="400" height="300">
+                    <div class="ui segment" id="step7Box" style="display: none;">
+                        <h3>Congratulations! You have reached the end of the flowchart!</h3>
+                        <img src="assets/roadmap.png" alt="roadmap" width="400" height="300">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="button-container">
-        <!-- <div class="ui buttons"> -->
-            <button id="back-button" class="ui primary small button">Back</button>
-            <button id="reset-button" class="ui small button">Reset</button>
-            <button id="next-button" class="ui primary small button">Next</button>
-        <!-- </div> -->
-    </div>
     </section>
     <section class="ui container" id="age_groups">
         <div class="ui segment">
@@ -393,7 +393,7 @@
         </div>
         <div class="ui segment" id="age_groups_content" style="margin: 0; padding: 0;">
             <div class="ui segment content" style="display:none;">
-                <h4 class="ui header">Advice for Teenagers (15-20)</h4>
+                <h4 class="">Advice for Teenagers (15-20)</h4>
                 <p>Are you just starting out your independent life, and looking for financial advice on how to adult? Have
                     we got advice for you! Here's a collection of pointers to topics of interest to many young people in the
                     US (and other developed countries although the specifics pertain to the US in some cases).</p>
@@ -509,24 +509,184 @@
                                 <li>Read one or two books from the <a href="http://www.reddit.com/r/personalfinance/wiki/readinglist" rel="nofollow">reading list</a>.</li>
                                 </ul>
                         </div>
-                        <div class="title">
-                            <i class="dropdown icon"></i>
-                            Acknowledgements
-                          </div>
-                          <div class="content">
-                            <p>This guide incorporates <a href="https://www.reddit.com/r/personalfinance/comments/4tfc76/eli18_personal_finance_tips_for_young_adults_us/" rel="nofollow">the ELI18 guide</a> written by <a href="/u/yes_its_him" rel="nofollow">/u/yes_its_him</a>.</p>
-                            </div>
-                            
                 </div>
+                <br>
+                <p>This guide incorporates <a href="https://www.reddit.com/r/personalfinance/comments/4tfc76/eli18_personal_finance_tips_for_young_adults_us/" rel="nofollow">the ELI18 guide</a> written by <a href="https://www.reddit.com/user/yes_its_him/" rel="nofollow">/u/yes_its_him</a>.</p>
             </div>
 
             <div class="ui segment content" style="display:none;">
                 <h4 class="">Advice for Young Adults (18-25)</h4>
-                <p>Coming soon.</p>
+                <p>The "young adult" here means you're done with full-time education, have a career with meaningful income, and are responsible for your own support.  Some people start this at 18, some at 26; age is not important.  Specifics pertain to the US in some cases.  This assumes you are a single childless renter employee; the <a href="https://www.reddit.com/r/personalfinance/wiki/early_career" rel="nofollow">next section after this</a> covers marriage, home ownership, and children.</p>
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        How to handle $
+                    </div>
+                    <div class="content">
+                        <p>You have money now, congratulations!  Read <a href="https://www.reddit.com/r/personalfinance/wiki/commontopics" rel="nofollow">this</a> excellent summary of how to handle it.  Here's a <a href="https://i.imgur.com/CcEVQAV.png" rel="nofollow">ginormous flowchart</a> showing what to do first: bills? loans?  investments?  Good self-study!  We'll highlight three Big Ideas to get you started.</p>
+                        <ul>
+                            <li><p><strong>Taxes</strong>. Your employee income is taxed like so: 7.65% goes to <a href="https://www.irs.gov/taxtopics/tc751.html" rel="nofollow">Social Security and Medicare taxes</a> until you reach <a href="#social_security_wage_base_limit" rel="nofollow"></a>$160,200<a href="##" rel="nofollow"></a>. Also, at the same time your income is taxed in chunks at <a href="https://taxfoundation.org/2018-tax-brackets" rel="nofollow">various rates</a>.  Assuming no special deductions, 0% for the first <a href="#standard_deduction_single" rel="nofollow"></a>$13,850<a href="##" rel="nofollow"></a> due to standard deduction and exemption.  Then 10% of the next ~$9K, 15% of the next ~$28K, 25% of the next ~$54K, and so on.  For more detail about how taxes are computed, see the wiki page on <a href="https://www.reddit.com/r/personalfinance/wiki/taxes" rel="nofollow">Taxes</a>. Most states also have state income taxes of ~6%ish but they vary a lot.  Your marginal income tax rate affects only the dollars within the highest bracket; so <a href="http://blog.taxact.com/how-tax-brackets-work/" rel="nofollow">you always come out ahead</a> with more income, even if it means entering a new top tax bracket.   You reduce your taxes with credits and <a href="http://money.howstuffworks.com/personal-finance/personal-income-taxes/tax-deductions.htm" rel="nofollow">deductions</a>.</p>
+                            <p><strong>Big Idea 1</strong> is: <a href="https://www.reddit.com/r/personalfinance/wiki/taxes" rel="nofollow">reduce your current taxes</a> by making less of your income  taxable.</p></li>
+                            <li><p><strong>Debt</strong>.  You borrow money now so you can spend it, yay!  But then you have to pay it back, and typically pay back more than you borrowed, boo!  You've lost money as a result.  The extra amount you repay is determined by the <a href="http://banking.about.com/od/loans/a/Calculate-Interest-You-Pay.htm" rel="nofollow">interest rate</a>; the annual rate is called APR.<br>
+                            3% APR student loan?  You'll pay $30 annual interest on $1,000.  Not bad.<br>
+                            12% APR car loan?  You'll pay $120.  Not good.<br>
+                            23.9% APR credit card?  You'll pay $239.  Yikes!  (Never do this!)
+                            You repay the money you borrowed, too; that's called principal.  The longer you take to repay the loan,  the smaller each payment, but the more interest you'll then pay.  It's a tradeoff.</p>
+                            <p><strong>Big Idea 2</strong> is: <a href="https://www.reddit.com/r/personalfinance/wiki/debt" rel="nofollow">reduce the amount of interest you pay</a> by getting lower interest rates, and avoiding / quickly repaying higher interest debt.</p></li>
+                            <li><p><strong>Investing</strong>.  In <a href="https://www.reddit.com/r/personalfinance/wiki/teachme" rel="nofollow">Advice for high school students and teenagers</a>, we noted bank interest won't make you rich.  The good news for you now is: investments can make you  <a href="http://www.bankrate.com/calculators/savings/save-million-calculator.aspx" rel="nofollow">current millionaire rich</a>.  The catch is: it takes decades, and you must regularly invest significant sums.  This why you start at early!  <a href="https://old.reddit.com/r/personalfinance/wiki/investing#wiki_can_you_just_recommend_something_extremely_specific_to_get_me_started.3F" rel="nofollow">Our approach to investments is based on investing into low-cost index funds</a> where you buy shares of either a <a href="https://clark.com/personal-finance-credit/investing-retirement/target-date-funds/" rel="nofollow">target date fund</a> designed to be worth a lot more when you retire at a target date 40+ years in the future or a <a href="https://www.bogleheads.org/wiki/Three-fund_portfolio" rel="nofollow">three-fund portfolio</a> where you manage your own allocation.  Historically, this approach gains about <a href="http://www.thesimpledollar.com/where-does-7-come-from-when-it-comes-to-long-term-stock-returns/" rel="nofollow">6% annually</a> after inflation although it varies significantly year to year.  At a 6% rate of growth, your money doubles every 12 years, and goes up by 10x after 40 years.  (All numbers are after taking inflation into account.)  So that $5,000 you put aside at 22 could easily be worth $50,000 of today's dollars at 65.  (But, there could be years where you temporarily <a href="http://www.finra.org/investors/reality-investment-risk" rel="nofollow">lose 10%, 20%, even 30%</a> of your savings.  Do not panic!  It will come back eventually.)</p>
+                            <p><strong>Big Idea 3</strong> is: invest early and often for your future, especially your retirement.  </p></li>
+                            </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Retirement Options
+                    </div>
+                    <div class="content">
+                        <p>Got the the Big Ideas now?   Good!  Let's see how we combine them for some meaningful benefits for your ~22-year-old self.</p>
+                        <ul>
+                            <li><p>Retirement contributions. You are going to retire someday.  Invest and perhaps reduce current taxes by letting your employer contribute a percent of each paycheck to your <a href="https://www.reddit.com/r/personalfinance/wiki/401k" rel="nofollow">401(k) account</a> (or similar things with different names for government employers).  A recommended investment percentage is 10%, but it's up to you; more is better, the annual maximum is <a href="#401k_contribution_limit" rel="nofollow"></a>$22,500<a href="##" rel="nofollow"></a>.  The cardinal rule is <a href="https://www.magnifymoney.com/blog/retirement/401k-matching/" rel="nofollow">Take The Match</a> if you have one.  A typical employer adds 3% of your salary when you contribute 6%, so that's like Free Money.  Take The Match.  (Your actual match depends on your employer's rules.) The money is invested for you, available penalty-free when you retire after age 59½ (usually.)  If you change jobs, the money can go with you.  A 401(k) can only invest in what your employer offers.   Most employers have target date funds, so choosing one is an easy decision.  If you need or want to, you can sometimes achieve an  even better result by picking other available choices.</p></li>
+                            <li><p>"What do you mean 'perhaps reduce current taxes'?"  Retirement savings are wery wery complicated.  (Thank your  congresspeople.) A "traditional" 401(k) reduces your current taxes because it exempts your contributions from your taxable income.  You pay taxes when you take the money out, deferring the taxes, but you still pay something.  If you would prefer, you can reverse this if your employer offers a "Roth" option.  In that case, you pay taxes on your 401(k) contributions , but no taxes when you take the money out.  The best <a href="https://www.reddit.com/r/personalfinance/wiki/rothortraditional" rel="nofollow">choice</a> is complex; for those below the 22% bracket, Roth is usually better.  </p></li>
+                            <li><p>Yet more retirement options: IRAs.  <a href="https://www.reddit.com/r/personalfinance/wiki/iras" rel="nofollow">Individual Retirement Accounts</a> are do-it-yourself 401(k) plans.  You set up an account with a company like Vanguard, Schwab or Fidelity, and give them up to <a href="#ira_contribution_limit" rel="nofollow"></a>$6,500<a href="##" rel="nofollow"></a> annually to invest for you.   You have more investment choices, target date funds plus other options.   Depending on your income level and whether you have an employer 401(k), you open a traditional or Roth IRA, with tax treatment equivalent to the previously described 401(k) types.  IRAs are your go-to option if you have no employer 401(k), but you still may (and even should) want to use an IRA, especially a Roth IRA, even if you have one.  You can  tap IRA and 401(k) resources before retirement for certain allowable reasons, though it's not usually recommended because you lose future gains and might owe current taxes.  A Roth IRA is the best choice for raidable retirement savings because contributions can be taken out at any time without taxes or penalties.</p></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Student Loans
+                    </div>
+                    <div class="content">
+                        <p>OK.  That was a lot of information!  Ready to repay <a href="https://www.reddit.com/r/personalfinance/wiki/studentloans" rel="nofollow">student loans</a>? If you do have student loans, the interest rate clock is ticking.  Loans are typically 10 year repayment, so you'll owe about 1% of the loan balance each month for ten years.  You will have to pay these loans back unless you get them forgiven.</p>
+                        <ul>
+                            <li><p>If you owe $20,000, that's $200/month.  Like a car payment.  Not terrible.   </p></li>
+                            <li><p>If you owe $100,000, that will be $1,000/month.  Like a mortgage payment, only without the house.  Not fun to pay.</p></li>
+                        </ul>
+                        <p>You have <a href="https://studentaid.ed.gov/sa/repay-loans" rel="nofollow">several approaches</a> available for repayment:</p>
+                        <ul>
+                            <li><p>Pay them back on schedule.  It sounds crazy, but it just might work!   If your income supports it, pay the minimum on low-interest (&lt;~4%) loans.  If you have even more income, repay them faster with extra payments, especially on higher interest loans,  and save by paying less interest than you would over time.  This is your primary option on private loans.   If you have high-interest private loans, look into <a href="https://studentloanhero.com/refinance-and-consolidate-student-loans-0042/" rel="nofollow">refinancing</a> them; if you have good income and credit, you'll qualify for lower interest rates.  </p></li>
+                            <li><p>If you have a lot of federal loans but  little income, look into <a href="https://studentaid.ed.gov/sa/repay-loans/understand/plans/income-driven" rel="nofollow">reduced payment plans</a> like Income-Based Repayment (IBR) and Pay-As-You-Earn (PAYE) plans.  You'll pay less (even nothing) each month, based on your current income, but you'll pay longer, and ultimately pay more over time in many cases.  </p></li>
+                            <li><p>If you are really in a deep hole, maybe over $100K federal with only $40K annual income, give a special look into <a href="https://studentaid.ed.gov/sa/repay-loans/forgiveness-cancellation/public-service" rel="nofollow">Public Service Loan Forgiveness</a> (PSLF).  This program allows you to work for ten years in public service, make minimal payments, then your unpaid balance is magically forgiven, which is a really sweet deal if you can get it.  (This differs from forgiveness programs for IBR/PAYE that will charge you taxes on any amount forgiven in the future.)</p></li>
+                            </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Grad School
+                    </div>
+                    <div class="content">
+                        <p>Enough about  student loans.  Let's wrap up with a few other topics of general interest to 22 year olds:</p>
+                        <ul>
+                            <li>Grad school can be a good idea, but can also be a very expensive idea.  If you are sure this is for you, try to get someone else to pay for it, whether the school via scholarships / stipends, or your employer, if they do education reimbursement.  Med school is worth the money no matter who pays.   Law school and MBA return on investment is iffier these days.  Going to grad school because you are not sure what else to do is probably a big mistake, especially so if you have to pay for it.</li>
+                            </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Health Insurance
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li><p>You may be responsible for your <a href="https://www.reddit.com/r/personalfinance/wiki/health_insurance" rel="nofollow">health insurance</a>.  (You could be on your parents' plan until age 26 in many cases, though that may cost them something.) If your employer will pay for it, that's your best option.  They may offer a lower-premium <a href="http://health.usnews.com/health-news/health-insurance/articles/2014/11/10/should-you-roll-the-dice-on-a-high-deductible-health-plan" rel="nofollow">High Deductible Health Plan</a> (HDHP), where you pay routine costs, but insurance kicks in for major expenses.  This is a good choice if you have good health and make few claims.  You  should take advantage of a <a href="https://www.nerdwallet.com/blog/health/what-is-an-hsa/" rel="nofollow">Healthcare Savings Account</a> (HSA) with an HDHP.  This lets you deduct contributions to pay for out-of-pocket medical expenses, with  other unique features that make them attractive.  You can contribute <a href="#hsa_contribution_limit" rel="nofollow"></a>$3,850<a href="##" rel="nofollow"></a> annually to your HSA.  Some employers pay some of this for you as more free money.   </p></li>
+                            <li><p>If your employer doesn't offer health insurance and you can't use your parents' plan, you'll want to get an individual plan such as those found on <a href="http://healthcare.gov" rel="nofollow">healthcare.gov</a>.  You can only sign up at certain times, including open enrollment  in November / December.  If you don't have health insurance of some form, you could <a href="https://www.healthcare.gov/fees/fee-for-not-being-covered/" rel="nofollow">pay a penalty</a>, unless you have an <a href="https://www.healthcare.gov/health-coverage-exemptions/exemptions-from-the-fee/" rel="nofollow">exemption</a>.</p></li>
+                            </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Saving Money
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li><p>With more income, you can rent a nicer place within the same 30% of take-home guideline.  You may not even want a roommate!  Of course, any money you spend on housing is money you don't have for other things.  Living with your parents is still a viable option if you want to save, e.g. to pay down student loans.   Please make sure you have renter's insurance, it's well worth the small cost.   (Note that we assume you are not yet ready to buy a house; you may not yet be sure where you  want to live long-term, have limited work history, or have insufficient down payment.) </p></li>
+                            <li><p>While you may be able to afford a nicer car (since you hopefully have better credit and lower insurance rates), you'll save money if you don't.  Above all else, make sure you follow the <a href="/r/personalfinance/wiki/vehicles" rel="nofollow">budgeting advice in the vehicles wiki</a>.  Paying cash is still an option, but if you qualify for an auto loan at 2% or lower, it's a reasonable option if it frees up some income for retirement savings and loan repayments.  A good target price is perhaps $15K, with a $10K loan, which works out to 4 years at $220/month.  Your total cost of ownership would be about $5K annually.  <a href="https://www.reddit.com/r/personalfinance/wiki/vehicles#wiki_how_do_i_sell_a_used_car.3F" rel="nofollow">Selling your old car privately</a> will also get you roughly 20% more than you would by trading it in to a dealer.  </p></li>
+                            <li><p>With more expenses, budgeting becomes much more important.  You'll want to have a bigger emergency fund; we recommend at least three months' expenses, to cover that bad day when you lose your job and your car breaks.   With more expenses to track, look into a program like <a href="https://www.youneedabudget.com/" rel="nofollow">You Need a Budget</a> (ynab) or <a href="https://www.mint.com/" rel="nofollow">Mint</a> to help keep track of where your money is, and where it needs to be in the future.  Look for ways to economize where you can, whether by cheaper cell-phone plans, learning to cook so you want to eat at home, or taking advantage of employee discounts.  </p></li>
+                            <li><p>While you don't have a lot of tax deductions yet outside of retirement / HSA savings, take a look at possible <a href="http://web.archive.org/web/20170122070658/http://blogs.hrblock.com/2013/04/08/twenty-somethings-dont-overlook-these-tax-deductions/" rel="nofollow">tax breaks</a> for student loan interest, moving expenses associated with a job change, and certain tuition expenses (<a href="https://www.irs.gov/individuals/aotc" rel="nofollow">American Opportunity Tax Credit</a>).  You don't have to itemize to take advantage of these, but income limits apply in some cases.</p></li>
+                            </ul>
+                    </div>
+                </div>
+                <br>
+                <p><a href="https://www.reddit.com/r/personalfinance/comments/4tlqsd/eli22_personal_finance_tips_for_older_young/" rel="nofollow">The original version of this guide</a> was written by <a href="https://www.reddit.com/user/yes_its_him/" rel="nofollow">/u/yes_its_him</a>.</p>
             </div>
             <div class="ui segment content" style="display:none;">
                 <h4 class="">Advice for Older Young Adults (25-35)</h4>
-                <p>Coming soon.</p>
+                <p>Back with another installment in our series of simple lifestage-appropriate tips based on US situations.  This assumes you have read the earlier guides listed above.</p>
+                <p>Topics here, while relevant to older "twenty-somethings" and most "thirty-somethings", are appropriate for anyone with a stable financial situation.  Remember that marriage, home ownership, etc., are options and not requirements. </p>
+                <div class="ui styled fluid accordion">
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Marriage
+                    </div>
+                    <div class="content">
+                        <p>Marriage changes your legal situation and, consequently, your financial options.  </p>
+                        <ul>
+                            <li><p>Your married / single tax <a href="https://turbotax.intuit.com/tax-tools/tax-tips/IRS-Tax-Return/Should-You-and-Your-Spouse-File-Taxes-Jointly-or-Separately-/INF20137.html" rel="nofollow">filing status</a> is determined by your December 31 situation.   Joint taxes may <a href="https://www.learnvest.com/2011/01/the-most-important-decisions-youll-ever-make-marriage-edition/" rel="nofollow">vary a bit</a> vs.  single, but should be much better than filing married separately, except for certain income-based student loan repayment scenarios.  With two incomes, withhold taxes as "married at single rate" to simplify your W4. </p></li>
+                            <li><p>Ownership of assets / debts is complex and varies by state, but in the majority of cases: individuals retain assets and debts they had before marriage (e.g. student loans), whereas both parties <a href="http://www.nolo.com/legal-encyclopedia/separate-community-property-during-marriage-29921.html" rel="nofollow">share ownership</a> of assets and debts acquired during the marriage.  If a marriage ends, there is legal framework for <a href="http://www.nolo.com/legal-encyclopedia/dividing-property-debt-during-divorce-faq-29127.html" rel="nofollow">separating assets / debts</a>, which differs vs. owning an asset or debt jointly outside of marriage.</p></li>
+                            <li><p>You'll have some additional options regarding health insurance and <a href="http://money.usnews.com/money/retirement/articles/2014/03/10/how-marital-status-affects-retirement-benefits" rel="nofollow">social security benefits</a>.  </p></li>
+                            <li><p>Marriage financial LPTs include: do not go into debt for a ring / <a href="https://www.theknot.com/content/how-to-pay-for-a-wedding" rel="nofollow">wedding</a> / honeymoon; decide how to use  <a href="http://money.usnews.com/money/personal-finance/articles/2015/08/14/the-case-for-and-against-spouses-having-joint-checking-accounts" rel="nofollow">joint accounts</a>; make big decisions <a href="http://web.archive.org/web/20171103185454/http://finance.youngmoney.com/credit_debt/money_management/saving/money-talk-before-marriage/" rel="nofollow">together</a>, including what constitutes a big decision. </p></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Buying a house
+                    </div>
+                    <div class="content">
+                        <p>One of those big decisions could be buying a house.   Here's some information on <a href="https://www.reddit.com/r/personalfinance/wiki/housing" rel="nofollow">buying a house</a> that applies to couples as well as single people.  </p>
+                        <ul>
+                            <li><p>House buying usually involves thousands in <a href="http://www.moolanomy.com/6279/the-cost-of-buying-and-selling-a-home/" rel="nofollow">transaction costs</a>,  so don't keep paying those if you move frequently.  As a rule of thumb, buy only when you will stay in the same house for at least <a href="https://www.mortgageloan.com/five-year-rule-and-buying-home-9690" rel="nofollow">five years</a>.  Don't  buy just because you don't like paying rent; while rent doesn't build equity, it also avoids maintenance and repair expenses, allows greater location flexibility, and doesn't require a down payment.  Early mortgage payments are 75%+  interest, insurance and taxes, and only 25% equity.  Property price appreciation is not guaranteed, but if you  live somewhere for 20+ years, ownership is almost certain to build wealth over time.   Here's a <a href="http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html" rel="nofollow">calculator</a> to do some what-if's.  </p></li>
+                            <li><p>While <a href="https://www.investopedia.com/financial-edge/0411/5-things-you-need-to-be-pre-approved-for-a-mortgage.aspx" rel="nofollow">mortgage criteria</a> vary by lender, you need  stable <a href="http://blog.credit.com/2014/07/why-your-job-matters-when-buying-a-home-88105/" rel="nofollow">income history</a> (two+ years), a good <a href="http://www.bankrate.com/finance/mortgages/how-credit-scores-impact-your-mortgage-rate-1.aspx" rel="nofollow">credit score</a> (700ish), low <a href="https://www.zillow.com/mortgage-calculator/debt-to-income-calculator/" rel="nofollow">debt to income ratio</a> (all monthly debt payments below ~35% of gross income), and usually a significant down payment.  One rule of thumb is your house should cost less than three times your annual income.  [Edit: OK, we'll let you have 4X, counting just the mortgage, if you are in a low-property tax state.  No Illinois or New Jersey!]</p></li>
+                            <li><p>There are many types of mortgages.  You usually want a <a href="http://www.bankrate.com/finance/mortgages/arm-vs-fixed-rate-mortgage-1.aspx" rel="nofollow">fixed-rate</a> mortgage to lock in current attractive rates in case you stay in your house for many years.  A 30-year mortgage might have about a 4% rate; each $100K of mortgage would cost $477/month for principal and interest.  With a 15-year mortgage, you'd get a lower rate but higher payments; at 3%, each $100K would be $691/month.  The 15-year saves you an enormous amount  after 15 years when payments stop; until then, it costs you more out of pocket, as you build equity.  It's worth shopping around to get the best rate on a long loan.  </p></li>
+                            <li><p>Principal and interest isn't the only cost.  You'll also pay  property taxes and insurance, which can add ~20% to these payments, varying by <a href="https://wallethub.com/edu/states-with-the-highest-and-lowest-property-taxes/11585/" rel="nofollow">location</a>, and could be higher.  All condos, most townhouses, and some standalone houses also have monthly <a href="http://www.mortgagecalculator.org/helpful-advice/hoa-fees.php" rel="nofollow">Homeowner Association</a> (HOA) fees for maintenance / repairs, that can be several hundred / month.  Even with a fixed-rate mortgage, you'll find that taxes, insurance and HOA fees often increase year over year. </p></li>
+                            <li><p>The gold standard in down payments is 20% of the house price, though many people put down a smaller amount.  Some types of mortgages like <a href="https://www.veteransunited.com/va-loans/" rel="nofollow">VA</a> and <a href="https://www.usbank.com/home-loans/mortgage/fha-mortgages.aspx" rel="nofollow">FHA</a> allow lower down payments,  but limited to certain borrowers, or with extra costs.  For a conventional mortgage, you will usually pay <a href="http://www.consumerfinance.gov/askcfpb/122/what-is-private-mortgage-insurance.html" rel="nofollow">Private Mortgage Insurance</a> (PMI) if you have less than a 20% downpayment.  On a typical-size mortgage, this could be $100-200/month.  We recommend you save for your downpayment, but gifts from family members are also acceptable to lenders. </p></li>
+                            <li><p>Adding all that up: that $200k mortgage on a $220K condo isn't just $950 /month for the loan, but also $200 for taxes,  $250 for HOA / insurance, and $100 for PMI, so $1500 / month all told. </p></li>
+                            <li><p>Buying a house often gives you enough deductible interest and property taxes to allow <a href="http://www.nolo.com/legal-encyclopedia/homeowner-tax-deductions-29693.html" rel="nofollow">itemizing deductions</a>, but only the amount of deductions that exceeds the standard deduction is your net advantage.  I.e. if a couple can itemize $30K in deductible interest and taxes (including income tax), they benefit by a net $4100 deduction and save perhaps $500-1500 in taxes annually.  </p></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Children
+                    </div>
+                    <div class="content">
+                        <p>Children are another popular thirty-something decision.  Here are some ways children affect your finances:</p>
+                        <ul>
+                            <li><p>Children are expensive.  Even if they don't eat a lot, they <a href="http://www.cnpp.usda.gov/tools/CRC_Calculator/" rel="nofollow">add costs</a> for housing, health insurance and especially child care; potentially $10-15,000 annually for the first child; less per child beyond that.  Many working couples find  child care costs their biggest expense after housing.  Family health care premiums can approach $1000/month in some cases.  As a parent, married or not, you must budget for child-support-related costs at least until children reach age 18.</p></li>
+                            <li><p>On the plus side, children can reduce taxes.  A family of four with two children gets $28,000+ in untaxed income as  standard deductions and <a href="https://www.irs.gov/publications/p17/ch03.html" rel="nofollow">personal exemptions</a> in any event, more if they can itemize.  Then you could qualify for the <a href="https://turbotax.intuit.com/tax-tools/tax-tips/Family/7-Requirements-for-the-Child-Tax-Credit/INF15610.html" rel="nofollow">Child tax credit</a> and the <a href="https://turbotax.intuit.com/tax-tools/tax-tips/Family/The-Ins-and-Outs-of-the-Child-and-Dependent-Care-Tax-Credit/INF27554.html" rel="nofollow">Child and Dependent Care credit</a>, which can be worth thousands of dollars annually. </p></li>
+                            <li><p>We'll discuss longer-term issues like college in a future installment; you have some time and  options here.  But we must cover <a href="https://www.reddit.com/r/personalfinance/wiki/insurance" rel="nofollow">life insurance</a> now.  If you have children (or significant responsibilities to your spouse, etc), you need life insurance.  Term life insurance pays in the event you die, but otherwise expires after the ten- to twenty-year term.  Other types of insurance don't expire, but are much more expensive over time so are not the best choice for most people.  (Even if an old college friend tries to sell you this.)  In round numbers, you may need $500K to $1M death benefit; that much 20-year term life for a 30-year-old is around <del>$50</del> <a href="https://www.jrcinsurancegroup.com/life-insurance-rates-by-age/" rel="nofollow">$30/month</a>, but it varies, so shop around.  You  also need disability insurance; you are more likely to be disabled than to die early, with loss of income plus high medical bills.</p></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        End-of-life Planning
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li><p>Speaking of mortality, when you have children, you also need to have a <a href="http://money.usnews.com/money/personal-finance/articles/2012/09/26/important-things-to-consider-when-preparing-your-will" rel="nofollow">will</a>, whether or not you think you have a lot of assets to distribute. In the absence of a will, a court will decide what happens to your children if you e.g. get killed in a car accident, as roughly 100 people do every day.</p></li>
+                            <li><p>For a more detailed checklist, go through the <a href="https://www.reddit.com/r/personalfinance/wiki/end_of_life_planning" rel="nofollow">end-of-life planning wiki page</a>.</p></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Career and Employment
+                    </div>
+                    <div class="content">
+                        <p>Even if you don't want a house, spouse, or kids, you may have other financial events to deal with.  Let's close with two popular scenarios: job change, and self-employment income:</p>
+                        <ul>
+                            <li><p>You are probably going to change jobs several times in your career.  It's a good way to <a href="http://www.theatlantic.com/business/archive/2016/02/job-switchers-raise/460044/" rel="nofollow">increase income</a>, statistics tell us.  When you do change, you might have other financial ripples, such as moving costs, so take that into account.  What do you do with your 401k and your employer healthcare?</p></li>
+                            <li><p>You own your 401k, net of unvested employer contributions.  When you leave a job, you have <a href="http://money.usnews.com/money/retirement/articles/2014/05/27/what-to-do-with-a-401-k-when-you-change-jobs" rel="nofollow">options</a>.  You can leave the money in the old employer's plan (but not contribute);  roll it over any amount without tax or penalties into an IRA, either traditional or Roth as your 401k was; sometimes roll it into your new employer's 401k (but that depends on them); or you could in theory cash it out.  Never cash it out.  That defeats the purpose of retirement savings.  The IRA rollover is the typical recommendation, although it can affect your ability to do <a href="http://www.rothira.com/what-is-a-backdoor-roth-ira" rel="nofollow">backdoor Roth</a> contributions.  </p></li>
+                            <li><p>Switching employers often means changing healthcare plans.  This can mean higher (or lower) premiums, and resetting your deductible for the year.  You may have to bridge a <a href="http://www.insure.com/health-insurance/job-change-and-obamacare.html" rel="nofollow">short coverage gap</a>; you can do this at low costs without paying penalties.  Your HSA stays with you whether or not you have an HDHP at the new job.  </p></li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <i class="dropdown icon"></i>
+                        Self-employment
+                    </div>
+                    <div class="content">
+                        <p>Self-employment deserves its own post, and we've neglected it 'til now.  Let's cover the high-level points to partially rectify that:</p>
+                        <ul>
+                            <li><p>Self-employment (1099) income is when you are paid for work without being an employee (W2).  You could be a contractor, take cash side jobs, or otherwise get paid without withholdings.  You owe income taxes as well as <a href="https://www.irs.gov/individuals/self-employed" rel="nofollow">self-employment taxes</a> in lieu of social security / medicare employee taxes; these are annoyingly large at 15.3% without a standard deduction until you reach 118K total income, after which it drops to just medicare at 2.9%.  You can owe 40% on self-employment income  when you also have a regular job in the 25% bracket.  </p></li>
+                            <li><p>The good news is you can <a href="https://www.irs.gov/businesses/small-businesses-self-employed/deducting-business-expenses" rel="nofollow">deduct related expenses</a>  from your taxable net self-employment income, whether or not you can itemize otherwise.  This can include mileage to/from the job; home office space; cost of computers, cell phones, etc.; travel expenses, education expenses, it's a long list.  Carefully track these to correctly fill out your schedule C.</p></li>
+                            <li><p>The not-so-good news is you have to directly pay taxes yourself, using <a href="http://www.bankrate.com/finance/taxes/the-skinny-on-paying-estimated-taxes-1.aspx" rel="nofollow">quarterly estimated taxes</a> if your self-employment income is significant.  You use your crystal ball, figure out what you will owe in taxes for the year, and then send in part of that money in April, June, September and January.  (You can increase regular job withholding to avoid quarterly estimated taxes on small self-employment income.) </p></li>
+                            <li><p>Self-employed people have more and better options for <a href="https://www.irs.gov/retirement-plans/retirement-plans-for-self-employed-people" rel="nofollow">retirement accounts</a>, oddly enough.  You get more control and higher contribution limits, and you can even make your own 401k, but you have to do it yourself.  Since you're your own employer.    </p></li>
+                            <li><p>Most self-employed people don't need any special  legal business status.  You can remain a <a href="https://www.irs.gov/businesses/small-businesses-self-employed/sole-proprietorships" rel="nofollow">sole proprietor</a>  and report your taxes as personal income.  You establish a <a href="https://www.irs.gov/businesses/small-businesses-self-employed/limited-liability-company-llc" rel="nofollow">Limited Liability Company</a> for liability reasons, but it doesn't change your taxes.  To do that, you'd establish a corporation, such as an <a href="https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations" rel="nofollow">S-corp</a>, which gives you some alternatives that can reduce your tax liability.  </p></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <p><a href="https://www.reddit.com/r/personalfinance/comments/4tlqsd/eli22_personal_finance_tips_for_older_young/" rel="nofollow">The original version of this guide</a> was written by <a href="https://www.reddit.com/user/yes_its_him/" rel="nofollow">/u/yes_its_him</a>.</p>
             </div>
             <div class="ui segment content" style="display:none;">
                 <h4 class="">Advice for Mid-Career Adults (35-45)</h4>
