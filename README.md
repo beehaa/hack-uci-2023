@@ -1,8 +1,8 @@
-# hack-uci-2023 - Personal FinANTs Spending Flowchart - US 
+# hack-uci-2023 - Personal Finance Guide Website
 
 ## Introduction
 
-Welcome to the Personal FinANTs (Finance) Spending Flowchart project! This website is designed to help individuals gain a better understanding of personal finance and investment concepts. The main page of the website provides a step-by-step walk-through of the flowchart found in the [r/personalfinance subreddit](https://www.reddit.com/r/personalfinance/wiki/commontopics/). 
+Welcome to the Personal Finance Guide project! This website is designed to help individuals gain a better understanding of personal finance and investment concepts. The main page of the website provides a step-by-step walk-through of the flowchart found in the [r/personalfinance subreddit](https://www.reddit.com/r/personalfinance/wiki/commontopics/). 
 
 Additionally, the website features a Monthly 50/30/20 Budget Calculator and a section for additional resources, making it a comprehensive tool for anyone looking to improve their financial literacy and gain control of their finances.
 
@@ -37,7 +37,7 @@ The Personal Finance Companion project is a comprehensive tool for anyone lookin
 
 ## Future Improvements 
 
-- Splitting out resources by age group
+- Splitting out resources by age group [Done]
 - Resources by countries
 - Resources related to credit cards
 - Personalization tools like inputting income, debt, etc. and get back personalized feedback
